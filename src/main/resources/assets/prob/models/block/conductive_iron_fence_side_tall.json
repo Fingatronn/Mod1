@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "prob:blocks/cis",
+    "particle": "prob:blocks/cis"
+  },
+  "render_type": "solid"
+}

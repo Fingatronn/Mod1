@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prob:blocks/dist",
+    "up": "prob:blocks/dist",
+    "north": "prob:blocks/dist2",
+    "east": "prob:blocks/dist",
+    "south": "prob:blocks/dist",
+    "west": "prob:blocks/dist",
+    "particle": "prob:blocks/dist"
+  },
+  "render_type": "cutout_mipped"
+}

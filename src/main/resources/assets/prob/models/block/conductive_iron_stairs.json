@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prob:blocks/cis",
+    "top": "prob:blocks/cis",
+    "side": "prob:blocks/cis"
+  },
+  "render_type": "solid"
+}
