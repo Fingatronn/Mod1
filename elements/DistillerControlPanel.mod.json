@@ -108,7 +108,7 @@
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "Distcontroller",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 2,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

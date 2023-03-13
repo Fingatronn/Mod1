@@ -97,5 +97,23 @@ public class ReplicatorOnEntityTickUpdateProcedure {
 				world.addFreshEntity(entityToSpawn);
 			}
 		}
+		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x, y - 1, z), false);
+		}
+		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x, y + 1, z), false);
+		}
+		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x + 1, y, z), false);
+		}
+		if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x, y, z + 1), false);
+		}
+		if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x, y, z - 1), false);
+		}
+		if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.DIRT) {
+			world.destroyBlock(new BlockPos(x - 1, y, z), false);
+		}
 	}
 }

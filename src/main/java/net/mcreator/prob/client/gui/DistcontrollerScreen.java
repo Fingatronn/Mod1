@@ -83,6 +83,14 @@ public class DistcontrollerScreen extends AbstractContainerScreen<Distcontroller
 				return _retval.get();
 			}
 		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 6, 7, -12829636);
+		this.font.draw(poseStack, "" + (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				BlockEntity BlockEntity = world.getBlockEntity(pos);
+				if (BlockEntity != null)
+					return BlockEntity.getPersistentData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Process")) + "", 96, 7, -12829636);
 	}
 
 	@Override
