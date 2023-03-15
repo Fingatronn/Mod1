@@ -3317,6 +3317,39 @@
       "locked_code": false,
       "registry_name": "distcontroller",
       "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DrillRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
