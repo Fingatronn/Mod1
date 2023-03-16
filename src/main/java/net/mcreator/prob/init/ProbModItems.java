@@ -72,6 +72,7 @@ import net.mcreator.prob.item.FlintAxeItem;
 import net.mcreator.prob.item.EthanItem;
 import net.mcreator.prob.item.EnergyMeasureCircuitItem;
 import net.mcreator.prob.item.ElectrometerItem;
+import net.mcreator.prob.item.DrillSpiningItem;
 import net.mcreator.prob.item.DrillItem;
 import net.mcreator.prob.item.DetonatorItem;
 import net.mcreator.prob.item.CopperIngotItem;
@@ -225,6 +226,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> CONDUCTIVE_IRON_FENCE = block(ProbModBlocks.CONDUCTIVE_IRON_FENCE, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> FLUID_METER = REGISTRY.register("fluid_meter", () -> new FluidMeterItem());
 	public static final RegistryObject<Item> DRILL = REGISTRY.register("drill", () -> new DrillItem());
+	public static final RegistryObject<Item> DRILL_SPINING = REGISTRY.register("drill_spining", () -> new DrillSpiningItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

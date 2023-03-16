@@ -3317,6 +3317,48 @@
       "locked_code": false,
       "registry_name": "distcontroller",
       "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DrillRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "Drill",
+      "type": "tool",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill",
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3351,8 +3393,8 @@
       "item.prob.steel_armor_leggings": "Steel Leggings",
       "block.prob.boiler": "Boiler",
       "item.prob.capacitor_circuit": "Capacitor Circuit",
-      "block.prob.uranium_block": "Block of Uranium",
       "subtitles.rpg": "",
+      "block.prob.uranium_block": "Block of Uranium",
       "block.prob.naquadah_block": "Block of Naquadah",
       "block.prob.aluminium_block": "Block of Aluminium",
       "block.prob.bronze_block": "Block of Bronze",
@@ -3464,6 +3506,7 @@
       "item.prob.rpg": "RPG",
       "item.prob.flint_axe": "Flint Axe",
       "item.prob.steel_sword": "Steel Sword",
+      "item.prob.drill": "Drill",
       "item.prob.steel_axe": "Steel Axe",
       "block.prob.tin_ore": "TinOre",
       "block.prob.salt_block": "Block of Salt",

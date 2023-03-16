@@ -2,9 +2,9 @@
   "_fv": 34,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
-    "texture": "natrium_ingot",
-    "customModelName": "Normal",
+    "renderType": 2,
+    "texture": "drill2",
+    "customModelName": "ps:default",
     "name": "Drill",
     "specialInfo": [],
     "creativeTab": {
@@ -23,7 +23,7 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedOnBlock": {
+    "onBlockDestroyedWithTool": {
       "name": "DrillRightclickedOnBlock"
     }
   }

@@ -3317,6 +3317,57 @@
       "locked_code": false,
       "registry_name": "distcontroller",
       "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DrillRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "Drill",
+      "type": "tool",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "DrillSpining",
+      "type": "tool",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_spining",
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3379,6 +3430,7 @@
       "block.prob.conductive_iron_stairs": "Conductive Iron Stairs",
       "block.prob.conductive_iron_fence": "Conductive Iron Fence",
       "block.prob.platina_block": "Block of Platina",
+      "item.prob.drill_spining": "Drill Spining",
       "item.prob.methan_bucket": "Methan Bucket",
       "block.prob.chemical_reactor": "Chemical Reactor",
       "block.prob.machinechasislvl_1": "Machinechasislvl 1",
@@ -3464,6 +3516,7 @@
       "item.prob.rpg": "RPG",
       "item.prob.flint_axe": "Flint Axe",
       "item.prob.steel_sword": "Steel Sword",
+      "item.prob.drill": "Drill",
       "item.prob.steel_axe": "Steel Axe",
       "block.prob.tin_ore": "TinOre",
       "block.prob.salt_block": "Block of Salt",

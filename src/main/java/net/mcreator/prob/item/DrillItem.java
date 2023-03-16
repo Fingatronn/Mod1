@@ -1,12 +1,15 @@
 
 package net.mcreator.prob.item;
 
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.prob.procedures.DrillRightclickedOnBlockProcedure;
 import net.mcreator.prob.init.ProbModTabs;
@@ -41,10 +44,9 @@ public class DrillItem extends PickaxeItem {
 	}
 
 	@Override
-	public InteractionResult useOn(UseOnContext context) {
-		super.useOn(context);
-		DrillRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
-				context.getClickedPos().getZ(), context.getPlayer());
-		return InteractionResult.SUCCESS;
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
+		DrillRightclickedOnBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
 	}
 }

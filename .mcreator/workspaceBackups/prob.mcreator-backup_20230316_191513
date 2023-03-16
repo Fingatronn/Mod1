@@ -3359,6 +3359,15 @@
       "locked_code": false,
       "registry_name": "drill",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "DrillSpining",
+      "type": "tool",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_spining",
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3393,8 +3402,8 @@
       "item.prob.steel_armor_leggings": "Steel Leggings",
       "block.prob.boiler": "Boiler",
       "item.prob.capacitor_circuit": "Capacitor Circuit",
-      "block.prob.uranium_block": "Block of Uranium",
       "subtitles.rpg": "",
+      "block.prob.uranium_block": "Block of Uranium",
       "block.prob.naquadah_block": "Block of Naquadah",
       "block.prob.aluminium_block": "Block of Aluminium",
       "block.prob.bronze_block": "Block of Bronze",
@@ -3421,6 +3430,7 @@
       "block.prob.conductive_iron_stairs": "Conductive Iron Stairs",
       "block.prob.conductive_iron_fence": "Conductive Iron Fence",
       "block.prob.platina_block": "Block of Platina",
+      "item.prob.drill_spining": "Drill Spining",
       "item.prob.methan_bucket": "Methan Bucket",
       "block.prob.chemical_reactor": "Chemical Reactor",
       "block.prob.machinechasislvl_1": "Machinechasislvl 1",

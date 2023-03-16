@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": ""
+      },
+      "name": "default"
+    },
+    "drill": {
+      "map": {
+        "0": "drill4"
+      },
+      "name": "drill"
+    }
+  }
+}

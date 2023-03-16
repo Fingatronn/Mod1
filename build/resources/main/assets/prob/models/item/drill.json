@@ -1,6 +1,10 @@
 {
-  "parent": "item/handheld",
+  "forge_marker": 1,
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "prob:models/item/ps.obj",
   "textures": {
-    "layer0": "prob:items/natrium_ingot"
+    "m_7e02624c-816a-eb5a-e9f9-fdfad3f40f5a": "prob:blocks/generator_side",
+    "particle": "prob:items/drill2"
   }
 }
