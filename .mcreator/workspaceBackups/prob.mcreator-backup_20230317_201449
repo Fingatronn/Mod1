@@ -3359,6 +3359,27 @@
       "locked_code": false,
       "registry_name": "drill",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "DrillSpining",
+      "type": "tool",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_spining",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "SwingCancel",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swing_cancel",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3421,6 +3442,7 @@
       "block.prob.conductive_iron_stairs": "Conductive Iron Stairs",
       "block.prob.conductive_iron_fence": "Conductive Iron Fence",
       "block.prob.platina_block": "Block of Platina",
+      "item.prob.drill_spining": "Drill Spining",
       "item.prob.methan_bucket": "Methan Bucket",
       "block.prob.chemical_reactor": "Chemical Reactor",
       "block.prob.machinechasislvl_1": "Machinechasislvl 1",

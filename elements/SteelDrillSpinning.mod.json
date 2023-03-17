@@ -1,0 +1,30 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "steeldrillspinning",
+    "customModelName": "Normal",
+    "name": "Steel Drill",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 0.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 180,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "DrillRightclickedOnBlock"
+    }
+  }
+}

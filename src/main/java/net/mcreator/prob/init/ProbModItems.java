@@ -27,6 +27,7 @@ import net.mcreator.prob.item.SteelShovelItem;
 import net.mcreator.prob.item.SteelPickaxeItem;
 import net.mcreator.prob.item.SteelIngotItem;
 import net.mcreator.prob.item.SteelHoeItem;
+import net.mcreator.prob.item.SteelDrillSpinningItem;
 import net.mcreator.prob.item.SteelAxeItem;
 import net.mcreator.prob.item.SteelArmorItem;
 import net.mcreator.prob.item.SteamItem;
@@ -62,6 +63,7 @@ import net.mcreator.prob.item.KerozineItem;
 import net.mcreator.prob.item.IronSawItem;
 import net.mcreator.prob.item.IronDustItem;
 import net.mcreator.prob.item.HydrogenItem;
+import net.mcreator.prob.item.GoldDrillSpinningItem;
 import net.mcreator.prob.item.GasolineItem;
 import net.mcreator.prob.item.FluidMeterItem;
 import net.mcreator.prob.item.FlintSwordItem;
@@ -83,6 +85,7 @@ import net.mcreator.prob.item.ChloreItem;
 import net.mcreator.prob.item.CbDustItem;
 import net.mcreator.prob.item.CapacitorCircuitItem;
 import net.mcreator.prob.item.BronzeIngotItem;
+import net.mcreator.prob.item.BronzeDrillSpinningItem;
 import net.mcreator.prob.item.BitumenItem;
 import net.mcreator.prob.item.AmmunitionItem;
 import net.mcreator.prob.item.AmmoniumNitrateItem;
@@ -227,6 +230,9 @@ public class ProbModItems {
 	public static final RegistryObject<Item> FLUID_METER = REGISTRY.register("fluid_meter", () -> new FluidMeterItem());
 	public static final RegistryObject<Item> DRILL = REGISTRY.register("drill", () -> new DrillItem());
 	public static final RegistryObject<Item> DRILL_SPINING = REGISTRY.register("drill_spining", () -> new DrillSpiningItem());
+	public static final RegistryObject<Item> STEEL_DRILL_SPINNING = REGISTRY.register("steel_drill_spinning", () -> new SteelDrillSpinningItem());
+	public static final RegistryObject<Item> GOLD_DRILL_SPINNING = REGISTRY.register("gold_drill_spinning", () -> new GoldDrillSpinningItem());
+	public static final RegistryObject<Item> BRONZE_DRILL_SPINNING = REGISTRY.register("bronze_drill_spinning", () -> new BronzeDrillSpinningItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

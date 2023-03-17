@@ -2,9 +2,9 @@
   "_fv": 34,
   "_type": "tool",
   "definition": {
-    "renderType": 2,
+    "renderType": 1,
     "texture": "drill2",
-    "customModelName": "ps:default",
+    "customModelName": "model4:default",
     "name": "Drill",
     "specialInfo": [],
     "creativeTab": {

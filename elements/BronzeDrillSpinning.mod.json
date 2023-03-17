@@ -1,0 +1,30 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "drillanimationbronze",
+    "customModelName": "Normal",
+    "name": "Bronze Drill Spinning",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 0.1,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 300,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "DrillRightclickedOnBlock"
+    }
+  }
+}

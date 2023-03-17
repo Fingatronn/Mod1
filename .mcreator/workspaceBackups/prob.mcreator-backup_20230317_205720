@@ -3359,6 +3359,24 @@
       "locked_code": false,
       "registry_name": "drill",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "DrillSpining",
+      "type": "tool",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_spining",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "SteelDrillSpinning",
+      "type": "tool",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_drill_spinning",
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3421,6 +3439,7 @@
       "block.prob.conductive_iron_stairs": "Conductive Iron Stairs",
       "block.prob.conductive_iron_fence": "Conductive Iron Fence",
       "block.prob.platina_block": "Block of Platina",
+      "item.prob.drill_spining": "Drill Spining",
       "item.prob.methan_bucket": "Methan Bucket",
       "block.prob.chemical_reactor": "Chemical Reactor",
       "block.prob.machinechasislvl_1": "Machinechasislvl 1",
@@ -3483,6 +3502,7 @@
       "biome.prob.cool": "Cool",
       "item.prob.cobalt_ingot": "Cobalt",
       "item.prob.replicator_spawn_egg": "Replicator Spawn Egg",
+      "item.prob.steel_drill_spinning": "Steel Drill",
       "subtitles.p90": "",
       "item.prob.steel_armor_chestplate": "Steel Chestplate",
       "fluid.prob.steam": "Steam",

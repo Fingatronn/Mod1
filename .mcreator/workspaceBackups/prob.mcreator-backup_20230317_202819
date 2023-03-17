@@ -3368,6 +3368,18 @@
       "locked_code": false,
       "registry_name": "drill_spining",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "CancelSwingProcedure",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "cancel_swing_procedure",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [

@@ -72,7 +72,7 @@ public class P90Entity extends AbstractArrow implements ItemSupplier {
 		P90Entity entityarrow = new P90Entity(ProbModEntities.P_90.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -90,7 +90,7 @@ public class P90Entity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(3.5);
 		entityarrow.setKnockback(0);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("prob:p90")), SoundSource.PLAYERS, 1,
