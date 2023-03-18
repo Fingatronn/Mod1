@@ -26,7 +26,7 @@ public class DrillSpiningItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return -2f;
 			}
 
 			public int getLevel() {
@@ -40,7 +40,7 @@ public class DrillSpiningItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, 16f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 
 	@Override

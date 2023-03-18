@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "prob:items/golddrillspinning"
+    "layer0": "prob:items/golddrillanimation"
   }
 }

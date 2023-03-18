@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "golddrillspinning",
+    "texture": "golddrillanimation",
     "customModelName": "Normal",
     "name": "Gold Drill",
     "specialInfo": [],
@@ -13,7 +13,7 @@
     "toolType": "Pickaxe",
     "harvestLevel": 2,
     "efficiency": 16.0,
-    "attackSpeed": 0.0,
+    "attackSpeed": 20.0,
     "enchantability": 2,
     "damageVsEntity": 0.0,
     "usageCount": 80,

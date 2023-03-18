@@ -40,7 +40,7 @@ public class BronzeDrillSpinningItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3.9f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, 16f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 
 	@Override

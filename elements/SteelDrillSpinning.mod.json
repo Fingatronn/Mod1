@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "steeldrillspinning",
+    "texture": "steeldrillani",
     "customModelName": "Normal",
     "name": "Steel Drill",
     "specialInfo": [],
