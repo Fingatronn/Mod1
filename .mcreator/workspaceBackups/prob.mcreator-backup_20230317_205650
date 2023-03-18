@@ -3368,6 +3368,15 @@
       "locked_code": false,
       "registry_name": "drill_spining",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "SteelDrillSpinning",
+      "type": "tool",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_drill_spinning",
+      "path": "~/Items/Tools"
     }
   ],
   "variable_elements": [
@@ -3493,6 +3502,7 @@
       "biome.prob.cool": "Cool",
       "item.prob.cobalt_ingot": "Cobalt",
       "item.prob.replicator_spawn_egg": "Replicator Spawn Egg",
+      "item.prob.steel_drill_spinning": "Drill Spining",
       "subtitles.p90": "",
       "item.prob.steel_armor_chestplate": "Steel Chestplate",
       "fluid.prob.steam": "Steam",

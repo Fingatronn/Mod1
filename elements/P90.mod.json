@@ -29,7 +29,7 @@
     "bulletPower": 2.5,
     "bulletDamage": 3.5,
     "bulletKnockback": 0,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:Lovesanimation"
