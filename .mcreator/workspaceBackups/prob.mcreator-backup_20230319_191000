@@ -3395,6 +3395,86 @@
       "locked_code": false,
       "registry_name": "bronze_drill_spinning",
       "path": "~/Items/Tools"
+    },
+    {
+      "name": "DistTank",
+      "type": "gui",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dist_tank",
+      "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DistillationTankOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_tank_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DistillerDown",
+      "type": "block",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distiller_down",
+      "path": "~/Masinak/DistTower"
+    },
+    {
+      "name": "DistillerDownUpdateTick",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distiller_down_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Masinak/DistTower"
     }
   ],
   "variable_elements": [
@@ -3429,8 +3509,8 @@
       "item.prob.steel_armor_leggings": "Steel Leggings",
       "block.prob.boiler": "Boiler",
       "item.prob.capacitor_circuit": "Capacitor Circuit",
-      "block.prob.uranium_block": "Block of Uranium",
       "subtitles.rpg": "",
+      "block.prob.uranium_block": "Block of Uranium",
       "block.prob.naquadah_block": "Block of Naquadah",
       "block.prob.aluminium_block": "Block of Aluminium",
       "block.prob.bronze_block": "Block of Bronze",
@@ -3463,6 +3543,7 @@
       "block.prob.machinechasislvl_1": "Machinechasislvl 1",
       "block.prob.natrium_block": "Block of Natrium",
       "block.prob.gasoline": "Gasoline",
+      "block.prob.distiller_down": "Distillation Tank",
       "itemGroup.tabprobamod": "Probamod",
       "item.prob.copper_dust": "Copper Dust",
       "item.prob.tin_dust": "Tin Dust",

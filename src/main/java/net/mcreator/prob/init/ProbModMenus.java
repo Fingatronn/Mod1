@@ -16,6 +16,7 @@ import net.mcreator.prob.world.inventory.OilrefMenu;
 import net.mcreator.prob.world.inventory.MilitarychestguiMenu;
 import net.mcreator.prob.world.inventory.DustSmelterGUIMenu;
 import net.mcreator.prob.world.inventory.DistcontrollerMenu;
+import net.mcreator.prob.world.inventory.DistTankMenu;
 import net.mcreator.prob.world.inventory.Crusherlvl2guiMenu;
 import net.mcreator.prob.world.inventory.CrusherGuiMenu;
 import net.mcreator.prob.world.inventory.Chem1Menu;
@@ -46,4 +47,6 @@ public class ProbModMenus {
 	public static final RegistryObject<MenuType<Chem1Menu>> CHEM_1 = REGISTRY.register("chem_1", () -> IForgeMenuType.create(Chem1Menu::new));
 	public static final RegistryObject<MenuType<DistcontrollerMenu>> DISTCONTROLLER = REGISTRY.register("distcontroller",
 			() -> IForgeMenuType.create(DistcontrollerMenu::new));
+	public static final RegistryObject<MenuType<DistTankMenu>> DIST_TANK = REGISTRY.register("dist_tank",
+			() -> IForgeMenuType.create(DistTankMenu::new));
 }

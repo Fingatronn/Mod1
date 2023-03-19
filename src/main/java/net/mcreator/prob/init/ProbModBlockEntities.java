@@ -17,6 +17,7 @@ import net.mcreator.prob.block.entity.OilRefineryBlockEntity;
 import net.mcreator.prob.block.entity.NaquadahGeneratorBlockEntity;
 import net.mcreator.prob.block.entity.MilitaryChestBlockEntity;
 import net.mcreator.prob.block.entity.DustsmelterBlockEntity;
+import net.mcreator.prob.block.entity.DistillerDownBlockEntity;
 import net.mcreator.prob.block.entity.DistillerControlPanelBlockEntity;
 import net.mcreator.prob.block.entity.DistillationTankBlockEntity;
 import net.mcreator.prob.block.entity.Crusherlvl2BlockEntity;
@@ -58,6 +59,8 @@ public class ProbModBlockEntities {
 			ProbModBlocks.DISTILLER_CONTROL_PANEL, DistillerControlPanelBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CONDUCTIVE_IRON_FENCE = register("conductive_iron_fence",
 			ProbModBlocks.CONDUCTIVE_IRON_FENCE, ConductiveIronFenceBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> DISTILLER_DOWN = register("distiller_down", ProbModBlocks.DISTILLER_DOWN,
+			DistillerDownBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

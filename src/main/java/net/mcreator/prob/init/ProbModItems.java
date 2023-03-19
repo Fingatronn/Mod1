@@ -233,6 +233,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> STEEL_DRILL_SPINNING = REGISTRY.register("steel_drill_spinning", () -> new SteelDrillSpinningItem());
 	public static final RegistryObject<Item> GOLD_DRILL_SPINNING = REGISTRY.register("gold_drill_spinning", () -> new GoldDrillSpinningItem());
 	public static final RegistryObject<Item> BRONZE_DRILL_SPINNING = REGISTRY.register("bronze_drill_spinning", () -> new BronzeDrillSpinningItem());
+	public static final RegistryObject<Item> DISTILLER_DOWN = block(ProbModBlocks.DISTILLER_DOWN, ProbModTabs.TAB_PROBAMOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prob:blocks/distdown",
+    "particle": "prob:blocks/distdown"
+  },
+  "render_type": "solid"
+}

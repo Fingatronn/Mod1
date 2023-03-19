@@ -51,6 +51,7 @@ import net.mcreator.prob.block.HydrogenBlock;
 import net.mcreator.prob.block.GasolineBlock;
 import net.mcreator.prob.block.EthanBlock;
 import net.mcreator.prob.block.DustsmelterBlock;
+import net.mcreator.prob.block.DistillerDownBlock;
 import net.mcreator.prob.block.DistillerControlPanelBlock;
 import net.mcreator.prob.block.DistillationTankBlock;
 import net.mcreator.prob.block.Crusherlvl2Block;
@@ -142,4 +143,5 @@ public class ProbModBlocks {
 			() -> new DistillerControlPanelBlock());
 	public static final RegistryObject<Block> CONDUCTIVE_IRON_FENCE = REGISTRY.register("conductive_iron_fence",
 			() -> new ConductiveIronFenceBlock());
+	public static final RegistryObject<Block> DISTILLER_DOWN = REGISTRY.register("distiller_down", () -> new DistillerDownBlock());
 }

@@ -24,7 +24,7 @@ public class DistillerControlPanelUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
 				&& (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
-				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ProbModBlocks.DISTILLER_DOWN.get()
 				&& !((world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get())
 				&& (world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == ProbModBlocks.CONDUCTIVE_IRON_FENCE.get())) {
 			world.setBlock(new BlockPos(x, y, z), ProbModBlocks.DISTILLATION_TANK.get().defaultBlockState(), 3);

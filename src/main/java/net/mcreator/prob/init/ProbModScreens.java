@@ -16,6 +16,7 @@ import net.mcreator.prob.client.gui.OilrefScreen;
 import net.mcreator.prob.client.gui.MilitarychestguiScreen;
 import net.mcreator.prob.client.gui.DustSmelterGUIScreen;
 import net.mcreator.prob.client.gui.DistcontrollerScreen;
+import net.mcreator.prob.client.gui.DistTankScreen;
 import net.mcreator.prob.client.gui.Crusherlvl2guiScreen;
 import net.mcreator.prob.client.gui.CrusherGuiScreen;
 import net.mcreator.prob.client.gui.Chem1Screen;
@@ -39,6 +40,7 @@ public class ProbModScreens {
 			MenuScreens.register(ProbModMenus.OILREF.get(), OilrefScreen::new);
 			MenuScreens.register(ProbModMenus.CHEM_1.get(), Chem1Screen::new);
 			MenuScreens.register(ProbModMenus.DISTCONTROLLER.get(), DistcontrollerScreen::new);
+			MenuScreens.register(ProbModMenus.DIST_TANK.get(), DistTankScreen::new);
 		});
 	}
 }
