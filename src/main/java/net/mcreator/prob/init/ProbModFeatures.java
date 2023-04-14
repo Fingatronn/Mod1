@@ -29,6 +29,7 @@ import net.mcreator.prob.world.features.lakes.OilFeature;
 import net.mcreator.prob.world.features.lakes.NitricAcidFeature;
 import net.mcreator.prob.world.features.lakes.HydrogenFeature;
 import net.mcreator.prob.world.features.lakes.ChloreFeature;
+import net.mcreator.prob.world.features.EnchantedTreeFeature;
 import net.mcreator.prob.ProbMod;
 
 @Mod.EventBusSubscriber
@@ -52,4 +53,5 @@ public class ProbModFeatures {
 	public static final RegistryObject<Feature<?>> NITRIC_ACID = REGISTRY.register("nitric_acid", NitricAcidFeature::feature);
 	public static final RegistryObject<Feature<?>> TRINIUM_ORE = REGISTRY.register("trinium_ore", TriniumOreFeature::feature);
 	public static final RegistryObject<Feature<?>> MUD = REGISTRY.register("mud", MudFeature::feature);
+	public static final RegistryObject<Feature<?>> ENCHANTED_TREE = REGISTRY.register("enchanted_tree", EnchantedTreeFeature::feature);
 }

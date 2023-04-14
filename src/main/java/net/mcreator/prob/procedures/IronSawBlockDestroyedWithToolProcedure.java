@@ -2,60 +2,202 @@ package net.mcreator.prob.procedures;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 public class IronSawBlockDestroyedWithToolProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		boolean found = false;
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
 		if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("logs")))) {
 			if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+				{
+					ItemStack _ist = itemstack;
+					if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
 				if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+					{
+						ItemStack _ist = itemstack;
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
 					if ((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+						{
+							ItemStack _ist = itemstack;
+							if (_ist.hurt(1, RandomSource.create(), null)) {
+								_ist.shrink(1);
+								_ist.setDamageValue(0);
+							}
+						}
 						if ((world.getBlockState(new BlockPos(x, y + 4, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+							{
+								ItemStack _ist = itemstack;
+								if (_ist.hurt(1, RandomSource.create(), null)) {
+									_ist.shrink(1);
+									_ist.setDamageValue(0);
+								}
+							}
 							if ((world.getBlockState(new BlockPos(x, y + 5, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 									.getBlock()) {
+								{
+									ItemStack _ist = itemstack;
+									if (_ist.hurt(1, RandomSource.create(), null)) {
+										_ist.shrink(1);
+										_ist.setDamageValue(0);
+									}
+								}
 								if ((world.getBlockState(new BlockPos(x, y + 6, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 										.getBlock()) {
+									{
+										ItemStack _ist = itemstack;
+										if (_ist.hurt(1, RandomSource.create(), null)) {
+											_ist.shrink(1);
+											_ist.setDamageValue(0);
+										}
+									}
 									if ((world.getBlockState(new BlockPos(x, y + 7, z))).getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 											.getBlock()) {
+										{
+											ItemStack _ist = itemstack;
+											if (_ist.hurt(1, RandomSource.create(), null)) {
+												_ist.shrink(1);
+												_ist.setDamageValue(0);
+											}
+										}
 										if ((world.getBlockState(new BlockPos(x, y + 8, z)))
 												.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+											{
+												ItemStack _ist = itemstack;
+												if (_ist.hurt(1, RandomSource.create(), null)) {
+													_ist.shrink(1);
+													_ist.setDamageValue(0);
+												}
+											}
 											if ((world.getBlockState(new BlockPos(x, y + 9, z)))
 													.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+												{
+													ItemStack _ist = itemstack;
+													if (_ist.hurt(1, RandomSource.create(), null)) {
+														_ist.shrink(1);
+														_ist.setDamageValue(0);
+													}
+												}
 												if ((world.getBlockState(new BlockPos(x, y + 10, z)))
 														.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+													{
+														ItemStack _ist = itemstack;
+														if (_ist.hurt(1, RandomSource.create(), null)) {
+															_ist.shrink(1);
+															_ist.setDamageValue(0);
+														}
+													}
 													if ((world.getBlockState(new BlockPos(x, y + 11, z)))
 															.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+														{
+															ItemStack _ist = itemstack;
+															if (_ist.hurt(1, RandomSource.create(), null)) {
+																_ist.shrink(1);
+																_ist.setDamageValue(0);
+															}
+														}
 														if ((world.getBlockState(new BlockPos(x, y + 12, z)))
 																.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+															{
+																ItemStack _ist = itemstack;
+																if (_ist.hurt(1, RandomSource.create(), null)) {
+																	_ist.shrink(1);
+																	_ist.setDamageValue(0);
+																}
+															}
 															if ((world.getBlockState(new BlockPos(x, y + 13, z)))
 																	.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+																{
+																	ItemStack _ist = itemstack;
+																	if (_ist.hurt(1, RandomSource.create(), null)) {
+																		_ist.shrink(1);
+																		_ist.setDamageValue(0);
+																	}
+																}
 																if ((world.getBlockState(new BlockPos(x, y + 14, z)))
 																		.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+																	{
+																		ItemStack _ist = itemstack;
+																		if (_ist.hurt(1, RandomSource.create(), null)) {
+																			_ist.shrink(1);
+																			_ist.setDamageValue(0);
+																		}
+																	}
 																	if ((world.getBlockState(new BlockPos(x, y + 15, z)))
 																			.getBlock() == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+																		{
+																			ItemStack _ist = itemstack;
+																			if (_ist.hurt(1, RandomSource.create(), null)) {
+																				_ist.shrink(1);
+																				_ist.setDamageValue(0);
+																			}
+																		}
 																		if ((world.getBlockState(new BlockPos(x, y + 16, z)))
 																				.getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 																						.getBlock()) {
+																			{
+																				ItemStack _ist = itemstack;
+																				if (_ist.hurt(1, RandomSource.create(), null)) {
+																					_ist.shrink(1);
+																					_ist.setDamageValue(0);
+																				}
+																			}
 																			if ((world.getBlockState(new BlockPos(x, y + 17, z)))
 																					.getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 																							.getBlock()) {
+																				{
+																					ItemStack _ist = itemstack;
+																					if (_ist.hurt(1, RandomSource.create(), null)) {
+																						_ist.shrink(1);
+																						_ist.setDamageValue(0);
+																					}
+																				}
 																				if ((world.getBlockState(new BlockPos(x, y + 18, z)))
 																						.getBlock() == (world.getBlockState(new BlockPos(x, y, z)))
 																								.getBlock()) {
+																					{
+																						ItemStack _ist = itemstack;
+																						if (_ist.hurt(1, RandomSource.create(), null)) {
+																							_ist.shrink(1);
+																							_ist.setDamageValue(0);
+																						}
+																					}
 																					if ((world.getBlockState(new BlockPos(x, y + 19, z)))
 																							.getBlock() == (world
 																									.getBlockState(new BlockPos(x, y, z)))
 																									.getBlock()) {
+																						{
+																							ItemStack _ist = itemstack;
+																							if (_ist.hurt(1, RandomSource.create(), null)) {
+																								_ist.shrink(1);
+																								_ist.setDamageValue(0);
+																							}
+																						}
 																						if ((world.getBlockState(new BlockPos(x, y + 20, z)))
 																								.getBlock() == (world
 																										.getBlockState(new BlockPos(x, y, z)))
 																										.getBlock()) {
+																							{
+																								ItemStack _ist = itemstack;
+																								if (_ist.hurt(1, RandomSource.create(), null)) {
+																									_ist.shrink(1);
+																									_ist.setDamageValue(0);
+																								}
+																							}
 																							{
 																								BlockPos _pos = new BlockPos(x, y, y + 20);
 																								Block.dropResources(world.getBlockState(_pos), world,
