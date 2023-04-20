@@ -33,10 +33,10 @@ public class TitatiumOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new TitatiumOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:titatium_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.TITATIUM_ORE.get().defaultBlockState())), 1));
-		PLACED_FEATURE = PlacementUtils.register("prob:titatium_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(135)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:titatium_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.TITATIUM_ORE.get().defaultBlockState())), 1));
+		PLACED_FEATURE = PlacementUtils.register("prob:titatium_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(135)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

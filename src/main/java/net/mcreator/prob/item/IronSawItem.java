@@ -41,7 +41,7 @@ public class IronSawItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 1, -3.7f, new Item.Properties().tab(ProbModTabs.TAB_PROBAMOD).fireResistant());
+		}, 1, -3.69999999999999996f, new Item.Properties().tab(ProbModTabs.TAB_PROBAMOD).fireResistant());
 	}
 
 	@Override

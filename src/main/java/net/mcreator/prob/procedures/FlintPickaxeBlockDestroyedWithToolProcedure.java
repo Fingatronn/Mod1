@@ -14,14 +14,10 @@ public class FlintPickaxeBlockDestroyedWithToolProcedure {
 		if (!((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.STONE)) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-						((world instanceof Level _lvlSmeltResult && _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING,
-								new SimpleContainer((new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()))), _lvlSmeltResult)
-								.isPresent())
-										? _lvlSmeltResult.getRecipeManager()
-												.getRecipeFor(RecipeType.SMELTING,
-														new SimpleContainer((new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()))),
-														_lvlSmeltResult)
-												.get().getResultItem().copy()
+						((world instanceof Level _lvlSmeltResult
+								&& _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer((new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()))), _lvlSmeltResult).isPresent())
+										? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer((new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()))), _lvlSmeltResult).get().getResultItem()
+												.copy()
 										: ItemStack.EMPTY));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);

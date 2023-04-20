@@ -25,14 +25,11 @@ import net.mcreator.prob.ProbMod;
 public class ProbModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ProbMod.MODID);
 	public static final RegistryObject<EntityType<P90Entity>> P_90 = register("projectile_p_90",
-			EntityType.Builder.<P90Entity>of(P90Entity::new, MobCategory.MISC).setCustomClientFactory(P90Entity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+			EntityType.Builder.<P90Entity>of(P90Entity::new, MobCategory.MISC).setCustomClientFactory(P90Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<RPGEntity>> RPG = register("projectile_rpg",
-			EntityType.Builder.<RPGEntity>of(RPGEntity::new, MobCategory.MISC).setCustomClientFactory(RPGEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ReplicatorEntity>> REPLICATOR = register("replicator",
-			EntityType.Builder.<ReplicatorEntity>of(ReplicatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ReplicatorEntity::new).fireImmune().sized(1.4f, 0.9f));
+			EntityType.Builder.<RPGEntity>of(RPGEntity::new, MobCategory.MISC).setCustomClientFactory(RPGEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ReplicatorEntity>> REPLICATOR = register("replicator", EntityType.Builder.<ReplicatorEntity>of(ReplicatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(ReplicatorEntity::new).fireImmune().sized(1.4f, 0.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -25,8 +25,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Items.COAL && (new Object() {
@@ -34,8 +33,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == Items.COAL && (new Object() {
@@ -43,8 +41,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == Items.IRON_INGOT && (new Object() {
@@ -52,8 +49,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) == 0 || (new Object() {
@@ -61,8 +57,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ProbModItems.STEEL_INGOT.get() && new Object() {
@@ -70,8 +65,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) <= 63)) {
@@ -162,8 +156,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -188,8 +181,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Items.COAL && (new Object() {
@@ -197,8 +189,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ProbModItems.COPPER_INGOT.get() && new Object() {
@@ -206,8 +197,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 1) >= 3 && (new Object() {
@@ -215,8 +205,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == ProbModItems.TIN_INGOT.get() && (new Object() {
@@ -224,8 +213,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) == 0 || (new Object() {
@@ -233,8 +221,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ProbModItems.BRONZE_INGOT.get() && new Object() {
@@ -242,8 +229,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) <= 63)) {
@@ -334,8 +320,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 3) + 3));
@@ -360,8 +345,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Items.COAL && (new Object() {
@@ -369,8 +353,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == Items.REDSTONE && new Object() {
@@ -378,8 +361,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 1) >= 10 && (new Object() {
@@ -387,8 +369,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == Items.IRON_INGOT && (new Object() {
@@ -396,8 +377,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) == 0 || (new Object() {
@@ -405,8 +385,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ProbModItems.CONDUCTIVE_IRON_INGOT.get() && new Object() {
@@ -414,8 +393,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 3) <= 63)) {
@@ -506,8 +484,7 @@ public class AlloyfurnaceUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 3) + 3));

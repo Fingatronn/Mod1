@@ -1,9 +1,6 @@
 
 package net.mcreator.prob.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,29 +13,21 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.prob.procedures.ConductiveIronFenceUpdateTickProcedure;
-import net.mcreator.prob.procedures.ConductiveIronFenceParticleSpawningConditionProcedure;
 import net.mcreator.prob.block.entity.ConductiveIronFenceBlockEntity;
 
 import java.util.List;
 import java.util.Collections;
 
-public class ConductiveIronFenceBlock extends WallBlock
-		implements
-
-			EntityBlock {
+public class ConductiveIronFenceBlock extends WallBlock implements EntityBlock {
 	public ConductiveIronFenceBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 	}
 
 	@Override
@@ -66,26 +55,8 @@ public class ConductiveIronFenceBlock extends WallBlock
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		ConductiveIronFenceUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
-		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		if (ConductiveIronFenceParticleSpawningConditionProcedure.execute(world, x, y, z))
-			for (int l = 0; l < 1; ++l) {
-				double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 1D;
-				double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 1D;
-				double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 1D;
-				world.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x0, y0, z0, 0, 0, 0);
-			}
 	}
 
 	@Override

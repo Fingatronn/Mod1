@@ -38,10 +38,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class DustsmelterBlock extends Block
-		implements
-
-			EntityBlock {
+public class DustsmelterBlock extends Block implements EntityBlock {
 	public DustsmelterBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
@@ -71,7 +68,6 @@ public class DustsmelterBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		DustsmelterUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

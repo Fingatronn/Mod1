@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.prob.client.gui.SgeneratorGuiScreen;
+import net.mcreator.prob.client.gui.RedstonepressScreen;
 import net.mcreator.prob.client.gui.OilrefScreen;
 import net.mcreator.prob.client.gui.MilitarychestguiScreen;
 import net.mcreator.prob.client.gui.DustSmelterGUIScreen;
@@ -41,6 +42,7 @@ public class ProbModScreens {
 			MenuScreens.register(ProbModMenus.CHEM_1.get(), Chem1Screen::new);
 			MenuScreens.register(ProbModMenus.DISTCONTROLLER.get(), DistcontrollerScreen::new);
 			MenuScreens.register(ProbModMenus.DIST_TANK.get(), DistTankScreen::new);
+			MenuScreens.register(ProbModMenus.REDSTONEPRESS.get(), RedstonepressScreen::new);
 		});
 	}
 }

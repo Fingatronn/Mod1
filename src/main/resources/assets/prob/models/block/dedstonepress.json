@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prob:blocks/redstonepressnotfront",
+    "up": "prob:blocks/redstonepressnotfront",
+    "north": "prob:blocks/redstonepressface",
+    "east": "prob:blocks/redstonepressnotfront",
+    "south": "prob:blocks/redstonepressnotfront",
+    "west": "prob:blocks/redstonepressnotfront",
+    "particle": "prob:blocks/redstonepressnotfront"
+  },
+  "render_type": "solid"
+}

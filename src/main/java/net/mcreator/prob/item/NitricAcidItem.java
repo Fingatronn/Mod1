@@ -17,8 +17,7 @@ import java.util.List;
 
 public class NitricAcidItem extends BucketItem {
 	public NitricAcidItem() {
-		super(ProbModFluids.NITRIC_ACID,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
+		super(ProbModFluids.NITRIC_ACID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
 	}
 
 	@Override

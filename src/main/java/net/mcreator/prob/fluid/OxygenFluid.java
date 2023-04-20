@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class OxygenFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.OXYGEN_TYPE.get(),
-			() -> ProbModFluids.OXYGEN.get(), () -> ProbModFluids.FLOWING_OXYGEN.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.OXYGEN_TYPE.get(), () -> ProbModFluids.OXYGEN.get(), () -> ProbModFluids.FLOWING_OXYGEN.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.OXYGEN_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.OXYGEN.get());
 
 	private OxygenFluid() {

@@ -17,8 +17,7 @@ import java.util.List;
 
 public class ChloreItem extends BucketItem {
 	public ChloreItem() {
-		super(ProbModFluids.CHLORE,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
+		super(ProbModFluids.CHLORE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
 	}
 
 	@Override

@@ -12,6 +12,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.prob.world.inventory.SgeneratorGuiMenu;
+import net.mcreator.prob.world.inventory.RedstonepressMenu;
 import net.mcreator.prob.world.inventory.OilrefMenu;
 import net.mcreator.prob.world.inventory.MilitarychestguiMenu;
 import net.mcreator.prob.world.inventory.DustSmelterGUIMenu;
@@ -27,26 +28,17 @@ import net.mcreator.prob.ProbMod;
 
 public class ProbModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, ProbMod.MODID);
-	public static final RegistryObject<MenuType<AlloyFurneaceMenu>> ALLOY_FURNEACE = REGISTRY.register("alloy_furneace",
-			() -> IForgeMenuType.create(AlloyFurneaceMenu::new));
-	public static final RegistryObject<MenuType<MilitarychestguiMenu>> MILITARYCHESTGUI = REGISTRY.register("militarychestgui",
-			() -> IForgeMenuType.create(MilitarychestguiMenu::new));
-	public static final RegistryObject<MenuType<CrusherGuiMenu>> CRUSHER_GUI = REGISTRY.register("crusher_gui",
-			() -> IForgeMenuType.create(CrusherGuiMenu::new));
-	public static final RegistryObject<MenuType<BoilerguiMenu>> BOILERGUI = REGISTRY.register("boilergui",
-			() -> IForgeMenuType.create(BoilerguiMenu::new));
-	public static final RegistryObject<MenuType<SgeneratorGuiMenu>> SGENERATOR_GUI = REGISTRY.register("sgenerator_gui",
-			() -> IForgeMenuType.create(SgeneratorGuiMenu::new));
-	public static final RegistryObject<MenuType<Alloysmelterlvl2guiMenu>> ALLOYSMELTERLVL_2GUI = REGISTRY.register("alloysmelterlvl_2gui",
-			() -> IForgeMenuType.create(Alloysmelterlvl2guiMenu::new));
-	public static final RegistryObject<MenuType<DustSmelterGUIMenu>> DUST_SMELTER_GUI = REGISTRY.register("dust_smelter_gui",
-			() -> IForgeMenuType.create(DustSmelterGUIMenu::new));
-	public static final RegistryObject<MenuType<Crusherlvl2guiMenu>> CRUSHERLVL_2GUI = REGISTRY.register("crusherlvl_2gui",
-			() -> IForgeMenuType.create(Crusherlvl2guiMenu::new));
+	public static final RegistryObject<MenuType<AlloyFurneaceMenu>> ALLOY_FURNEACE = REGISTRY.register("alloy_furneace", () -> IForgeMenuType.create(AlloyFurneaceMenu::new));
+	public static final RegistryObject<MenuType<MilitarychestguiMenu>> MILITARYCHESTGUI = REGISTRY.register("militarychestgui", () -> IForgeMenuType.create(MilitarychestguiMenu::new));
+	public static final RegistryObject<MenuType<CrusherGuiMenu>> CRUSHER_GUI = REGISTRY.register("crusher_gui", () -> IForgeMenuType.create(CrusherGuiMenu::new));
+	public static final RegistryObject<MenuType<BoilerguiMenu>> BOILERGUI = REGISTRY.register("boilergui", () -> IForgeMenuType.create(BoilerguiMenu::new));
+	public static final RegistryObject<MenuType<SgeneratorGuiMenu>> SGENERATOR_GUI = REGISTRY.register("sgenerator_gui", () -> IForgeMenuType.create(SgeneratorGuiMenu::new));
+	public static final RegistryObject<MenuType<Alloysmelterlvl2guiMenu>> ALLOYSMELTERLVL_2GUI = REGISTRY.register("alloysmelterlvl_2gui", () -> IForgeMenuType.create(Alloysmelterlvl2guiMenu::new));
+	public static final RegistryObject<MenuType<DustSmelterGUIMenu>> DUST_SMELTER_GUI = REGISTRY.register("dust_smelter_gui", () -> IForgeMenuType.create(DustSmelterGUIMenu::new));
+	public static final RegistryObject<MenuType<Crusherlvl2guiMenu>> CRUSHERLVL_2GUI = REGISTRY.register("crusherlvl_2gui", () -> IForgeMenuType.create(Crusherlvl2guiMenu::new));
 	public static final RegistryObject<MenuType<OilrefMenu>> OILREF = REGISTRY.register("oilref", () -> IForgeMenuType.create(OilrefMenu::new));
 	public static final RegistryObject<MenuType<Chem1Menu>> CHEM_1 = REGISTRY.register("chem_1", () -> IForgeMenuType.create(Chem1Menu::new));
-	public static final RegistryObject<MenuType<DistcontrollerMenu>> DISTCONTROLLER = REGISTRY.register("distcontroller",
-			() -> IForgeMenuType.create(DistcontrollerMenu::new));
-	public static final RegistryObject<MenuType<DistTankMenu>> DIST_TANK = REGISTRY.register("dist_tank",
-			() -> IForgeMenuType.create(DistTankMenu::new));
+	public static final RegistryObject<MenuType<DistcontrollerMenu>> DISTCONTROLLER = REGISTRY.register("distcontroller", () -> IForgeMenuType.create(DistcontrollerMenu::new));
+	public static final RegistryObject<MenuType<DistTankMenu>> DIST_TANK = REGISTRY.register("dist_tank", () -> IForgeMenuType.create(DistTankMenu::new));
+	public static final RegistryObject<MenuType<RedstonepressMenu>> REDSTONEPRESS = REGISTRY.register("redstonepress", () -> IForgeMenuType.create(RedstonepressMenu::new));
 }

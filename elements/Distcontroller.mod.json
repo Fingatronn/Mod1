@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,10 +16,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
           "y": 62
         }
@@ -28,9 +32,10 @@
         "type": "outputslot",
         "data": {
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 204,
           "y": 89
         }
@@ -38,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<fluidlevel>",
+          "name": "label_fluidlevel",
+          "text": {
+            "fixedValue": "<fluidlevel>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<fluidlevel>",
           "x": 132,
           "y": 44
         }
@@ -51,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:Process>",
+          "name": "label_bnbtnumberprocess",
+          "text": {
+            "fixedValue": "<BNBT:number:Process>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:Process>",
           "x": 222,
           "y": 44
         }

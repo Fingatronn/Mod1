@@ -22,8 +22,7 @@ public class FluidMeterRightclickedOnBlockProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = level.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 					return _retval.get();
 				}
 			}.getFluidTankLevel(world, new BlockPos(x, y, z), 1)) + "/" + (new Object() {
@@ -31,8 +30,7 @@ public class FluidMeterRightclickedOnBlockProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = level.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getTankCapacity(tank)));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> _retval.set(capability.getTankCapacity(tank)));
 					return _retval.get();
 				}
 			}.getFluidTankCapacity(world, new BlockPos(x, y, z), 1)) + " Fluid at " + direction)), (true));

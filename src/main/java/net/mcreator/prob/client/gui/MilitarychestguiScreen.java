@@ -1,4 +1,3 @@
-
 package net.mcreator.prob.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -68,7 +67,7 @@ public class MilitarychestguiScreen extends AbstractContainerScreen<Militaryches
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Military Chest", 17, 5, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.militarychestgui.label_military_chest"), 17, 5, -12829636);
 	}
 
 	@Override

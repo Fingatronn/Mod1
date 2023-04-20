@@ -33,10 +33,9 @@ public class CopperOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CopperOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:copper_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.COPPER_ORE.get().defaultBlockState())), 16));
-		PLACED_FEATURE = PlacementUtils.register("prob:copper_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(14), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:copper_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.COPPER_ORE.get().defaultBlockState())), 16));
+		PLACED_FEATURE = PlacementUtils.register("prob:copper_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(14), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

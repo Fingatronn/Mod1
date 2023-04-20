@@ -26,13 +26,11 @@ public class DistillerControlPanelOnBlockRightClickedProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				int _amount = 1000;
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(
-							capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(ProbModItems.OIL_BUCKET.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(Items.BUCKET);

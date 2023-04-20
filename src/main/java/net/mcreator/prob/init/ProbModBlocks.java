@@ -54,6 +54,7 @@ import net.mcreator.prob.block.DustsmelterBlock;
 import net.mcreator.prob.block.DistillerDownBlock;
 import net.mcreator.prob.block.DistillerControlPanelBlock;
 import net.mcreator.prob.block.DistillationTankBlock;
+import net.mcreator.prob.block.DedstonepressBlock;
 import net.mcreator.prob.block.Crusherlvl2Block;
 import net.mcreator.prob.block.Crusherlvl1Block;
 import net.mcreator.prob.block.CopperOreBlock;
@@ -94,8 +95,7 @@ public class ProbModBlocks {
 	public static final RegistryObject<Block> ALLOYSMELTERLVL_1 = REGISTRY.register("alloysmelterlvl_1", () -> new Alloysmelterlvl1Block());
 	public static final RegistryObject<Block> STEEL_BLOCK = REGISTRY.register("steel_block", () -> new SteelBlockBlock());
 	public static final RegistryObject<Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", () -> new BronzeBlockBlock());
-	public static final RegistryObject<Block> CONDUCTIVE_IRON_BLOCK = REGISTRY.register("conductive_iron_block",
-			() -> new ConductiveIronBlockBlock());
+	public static final RegistryObject<Block> CONDUCTIVE_IRON_BLOCK = REGISTRY.register("conductive_iron_block", () -> new ConductiveIronBlockBlock());
 	public static final RegistryObject<Block> CRUSHERLVL_1 = REGISTRY.register("crusherlvl_1", () -> new Crusherlvl1Block());
 	public static final RegistryObject<Block> STEAM = REGISTRY.register("steam", () -> new SteamBlock());
 	public static final RegistryObject<Block> BOILER = REGISTRY.register("boiler", () -> new BoilerBlock());
@@ -137,11 +137,9 @@ public class ProbModBlocks {
 	public static final RegistryObject<Block> PUMP = REGISTRY.register("pump", () -> new PumpBlock());
 	public static final RegistryObject<Block> MUD = REGISTRY.register("mud", () -> new MudBlock());
 	public static final RegistryObject<Block> DISTILLATION_TANK = REGISTRY.register("distillation_tank", () -> new DistillationTankBlock());
-	public static final RegistryObject<Block> CONDUCTIVE_IRON_STAIRS = REGISTRY.register("conductive_iron_stairs",
-			() -> new ConductiveIronStairsBlock());
-	public static final RegistryObject<Block> DISTILLER_CONTROL_PANEL = REGISTRY.register("distiller_control_panel",
-			() -> new DistillerControlPanelBlock());
-	public static final RegistryObject<Block> CONDUCTIVE_IRON_FENCE = REGISTRY.register("conductive_iron_fence",
-			() -> new ConductiveIronFenceBlock());
+	public static final RegistryObject<Block> CONDUCTIVE_IRON_STAIRS = REGISTRY.register("conductive_iron_stairs", () -> new ConductiveIronStairsBlock());
+	public static final RegistryObject<Block> DISTILLER_CONTROL_PANEL = REGISTRY.register("distiller_control_panel", () -> new DistillerControlPanelBlock());
+	public static final RegistryObject<Block> CONDUCTIVE_IRON_FENCE = REGISTRY.register("conductive_iron_fence", () -> new ConductiveIronFenceBlock());
 	public static final RegistryObject<Block> DISTILLER_DOWN = REGISTRY.register("distiller_down", () -> new DistillerDownBlock());
+	public static final RegistryObject<Block> DEDSTONEPRESS = REGISTRY.register("dedstonepress", () -> new DedstonepressBlock());
 }

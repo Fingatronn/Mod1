@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "prob:nitric_acid",
-  "step": "lakes"
-}

@@ -33,10 +33,10 @@ public class AluminiumOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new AluminiumOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:aluminium_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.ALUMINIUM_ORE.get().defaultBlockState())), 7));
-		PLACED_FEATURE = PlacementUtils.register("prob:aluminium_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(11), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:aluminium_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.ALUMINIUM_ORE.get().defaultBlockState())), 7));
+		PLACED_FEATURE = PlacementUtils.register("prob:aluminium_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(11), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

@@ -38,10 +38,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class Alloysmelterlvl1Block extends Block
-		implements
-
-			EntityBlock {
+public class Alloysmelterlvl1Block extends Block implements EntityBlock {
 	public Alloysmelterlvl1Block() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
@@ -71,7 +68,6 @@ public class Alloysmelterlvl1Block extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		AlloyfurnaceUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

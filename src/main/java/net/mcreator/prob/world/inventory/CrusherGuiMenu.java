@@ -79,7 +79,7 @@ public class CrusherGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.COAL == stack.getItem());
+				return Items.COAL == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 62) {

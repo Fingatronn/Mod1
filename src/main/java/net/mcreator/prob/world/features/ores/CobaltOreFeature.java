@@ -33,10 +33,9 @@ public class CobaltOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CobaltOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:cobalt_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.COBALT_ORE.get().defaultBlockState())), 4));
-		PLACED_FEATURE = PlacementUtils.register("prob:cobalt_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(7), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(43)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:cobalt_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.COBALT_ORE.get().defaultBlockState())), 4));
+		PLACED_FEATURE = PlacementUtils.register("prob:cobalt_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(7), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(43)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

@@ -1,4 +1,3 @@
-
 package net.mcreator.prob.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -68,7 +67,7 @@ public class DistTankScreen extends AbstractContainerScreen<DistTankMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Distillation tower", 6, 7, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.prob.dist_tank.label_distillation_tower"), 6, 7, -16777216);
 	}
 
 	@Override

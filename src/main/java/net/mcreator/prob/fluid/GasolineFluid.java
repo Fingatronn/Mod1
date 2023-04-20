@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class GasolineFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.GASOLINE_TYPE.get(),
-			() -> ProbModFluids.GASOLINE.get(), () -> ProbModFluids.FLOWING_GASOLINE.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.GASOLINE_TYPE.get(), () -> ProbModFluids.GASOLINE.get(), () -> ProbModFluids.FLOWING_GASOLINE.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.GASOLINE_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.GASOLINE.get());
 
 	private GasolineFluid() {

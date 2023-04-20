@@ -23,8 +23,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.REFINED_NAQUADAH_DIOXID.get()) {
@@ -68,8 +67,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = level.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+									_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 								return _retval.get();
 							}
 						}.receiveEnergySimulate(world, new BlockPos(x, y + 1, z), 1000);
@@ -93,8 +91,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = level.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+									_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 								return _retval.get();
 							}
 						}.receiveEnergySimulate(world, new BlockPos(x, y - 1, z), 1000);
@@ -118,8 +115,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = level.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+									_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 								return _retval.get();
 							}
 						}.receiveEnergySimulate(world, new BlockPos(x + 1, y, z), 1000);
@@ -143,8 +139,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = level.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+									_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 								return _retval.get();
 							}
 						}.receiveEnergySimulate(world, new BlockPos(x - 1, y, z), 1000);
@@ -168,8 +163,7 @@ public class NaquadahGeneratorUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = level.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+									_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 								return _retval.get();
 							}
 						}.receiveEnergySimulate(world, new BlockPos(x, y, z - 1), 1000);

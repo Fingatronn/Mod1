@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class KerozineFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.KEROZINE_TYPE.get(),
-			() -> ProbModFluids.KEROZINE.get(), () -> ProbModFluids.FLOWING_KEROZINE.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.KEROZINE_TYPE.get(), () -> ProbModFluids.KEROZINE.get(), () -> ProbModFluids.FLOWING_KEROZINE.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.KEROZINE_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.KEROZINE.get());
 
 	private KerozineFluid() {

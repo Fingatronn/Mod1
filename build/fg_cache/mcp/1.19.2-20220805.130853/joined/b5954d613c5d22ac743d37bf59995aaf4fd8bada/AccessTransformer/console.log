@@ -1,6 +1,6 @@
 JVM:         C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
 JVM Args:    
-Run Args:    "--inJar", "C:\Users\Kriston\MCreatorWorkspaces\newfile\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\rename\output.jar", "--outJar", "C:\Users\Kriston\MCreatorWorkspaces\newfile\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\AccessTransformer\output.jar", "--atFile", "C:\Users\Kriston\MCreatorWorkspaces\newfile\src\main\resources\META-INF\accesstransformer.cfg", "--atFile", "C:\Users\Kriston\AppData\Local\Temp\FG_ats_1204843113882963933.cfg"
+Run Args:    "--inJar", "C:\Users\Kriston\MCreatorWorkspaces\uncrack\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\rename\output.jar", "--outJar", "C:\Users\Kriston\MCreatorWorkspaces\uncrack\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\AccessTransformer\output.jar", "--atFile", "C:\Users\Kriston\MCreatorWorkspaces\uncrack\src\main\resources\META-INF\accesstransformer.cfg", "--atFile", "C:\Users\Kriston\AppData\Local\Temp\FG_ats_12827677105502259147.cfg"
 Classpath:   C:\Users\Kriston\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.0.7\accesstransformers-8.0.7-fatjar.jar
-Working Dir: C:\Users\Kriston\MCreatorWorkspaces\newfile\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\AccessTransformer
+Working Dir: C:\Users\Kriston\MCreatorWorkspaces\uncrack\build\fg_cache\mcp\1.19.2-20220805.130853\joined\b5954d613c5d22ac743d37bf59995aaf4fd8bada\AccessTransformer
 Main Class:  net.minecraftforge.accesstransformer.TransformerProcessor

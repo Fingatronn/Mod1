@@ -34,11 +34,9 @@ public class MudFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new MudFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:mud", FEATURE, new OreConfiguration(List
-				.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.MUD.get().defaultBlockState())),
-				16));
-		PLACED_FEATURE = PlacementUtils.register("prob:mud", CONFIGURED_FEATURE, List.of(CountPlacement.of(30), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(110)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:mud", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.MUD.get().defaultBlockState())), 16));
+		PLACED_FEATURE = PlacementUtils.register("prob:mud", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(30), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(110)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

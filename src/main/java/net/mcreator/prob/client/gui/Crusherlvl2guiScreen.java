@@ -1,21 +1,15 @@
-
 package net.mcreator.prob.client.gui;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.prob.world.inventory.Crusherlvl2guiMenu;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -73,24 +67,9 @@ public class Crusherlvl2guiScreen extends AbstractContainerScreen<Crusherlvl2gui
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Crusher lvl.2", 6, 7, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				BlockEntity BlockEntity = world.getBlockEntity(pos);
-				if (BlockEntity != null)
-					return BlockEntity.getPersistentData().getDouble(tag);
-				return 0;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "craftingProgress")) + "", 141, 46, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public int getEnergyStored(BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
-			}
-		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 123, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.crusherlvl_2gui.label_crusher_lvl2"), 6, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.crusherlvl_2gui.label_bnbtnumbercraftingprogress"), 141, 46, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.crusherlvl_2gui.label_energy"), 123, 7, -12829636);
 	}
 
 	@Override

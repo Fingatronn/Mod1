@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class ConductiveIronStairsBlock extends StairBlock {
 	public ConductiveIronStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
 	}
 
 	@Override

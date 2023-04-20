@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Crusher lvl.2",
+          "name": "label_crusher_lvl2",
+          "text": {
+            "fixedValue": "Crusher lvl.2"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Crusher lvl.2",
           "x": 132,
           "y": 44
         }
@@ -29,10 +31,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
           "y": 62
         }
@@ -41,9 +47,10 @@
         "type": "outputslot",
         "data": {
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 177,
           "y": 98
         }
@@ -52,9 +59,10 @@
         "type": "outputslot",
         "data": {
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 204,
           "y": 98
         }
@@ -63,9 +71,10 @@
         "type": "outputslot",
         "data": {
           "id": 3,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
           "x": 231,
           "y": 98
         }
@@ -73,12 +82,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:craftingProgress>",
+          "name": "label_bnbtnumbercraftingprogress",
+          "text": {
+            "fixedValue": "<BNBT:number:craftingProgress>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:craftingProgress>",
           "x": 267,
           "y": 83
         }
@@ -86,12 +97,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<energy>",
+          "name": "label_energy",
+          "text": {
+            "fixedValue": "<energy>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<energy>",
           "x": 249,
           "y": 44
         }

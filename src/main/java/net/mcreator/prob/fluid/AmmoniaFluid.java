@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class AmmoniaFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.AMMONIA_TYPE.get(),
-			() -> ProbModFluids.AMMONIA.get(), () -> ProbModFluids.FLOWING_AMMONIA.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.AMMONIA_TYPE.get(), () -> ProbModFluids.AMMONIA.get(), () -> ProbModFluids.FLOWING_AMMONIA.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.AMMONIA_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.AMMONIA.get());
 
 	private AmmoniaFluid() {

@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class HydrogenFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.HYDROGEN_TYPE.get(),
-			() -> ProbModFluids.HYDROGEN.get(), () -> ProbModFluids.FLOWING_HYDROGEN.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.HYDROGEN_TYPE.get(), () -> ProbModFluids.HYDROGEN.get(), () -> ProbModFluids.FLOWING_HYDROGEN.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.HYDROGEN_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.HYDROGEN.get());
 
 	private HydrogenFluid() {

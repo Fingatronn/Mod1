@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Crusher",
+          "name": "label_crusher",
+          "text": {
+            "fixedValue": "Crusher"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Crusher",
           "x": 132,
           "y": 44
         }
@@ -29,10 +31,14 @@
           "inputLimit": {
             "value": "Items.COAL#0"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 141,
           "y": 71
         }
@@ -42,7 +48,6 @@
         "data": {
           "image": "progress_bar_empty.png",
           "use1Xscale": false,
-          "name": "progress_bar_empty.png",
           "x": 231,
           "y": 44
         }
@@ -55,7 +60,6 @@
           "displayCondition": {
             "name": "Progressbarempty"
           },
-          "name": "progress_bar_filled_0.png",
           "x": 231,
           "y": 44
         }
@@ -68,7 +72,6 @@
           "displayCondition": {
             "name": "Progressbar1"
           },
-          "name": "progress_bar_filled_1.png",
           "x": 231,
           "y": 44
         }
@@ -81,7 +84,6 @@
           "displayCondition": {
             "name": "Progressbar2"
           },
-          "name": "progress_bar_filled_2.png",
           "x": 231,
           "y": 44
         }
@@ -94,7 +96,6 @@
           "displayCondition": {
             "name": "Progressbar3"
           },
-          "name": "progress_bar_filled_3.png",
           "x": 231,
           "y": 44
         }
@@ -107,7 +108,6 @@
           "displayCondition": {
             "name": "Progressbar4"
           },
-          "name": "progress_bar_filled_4.png",
           "x": 231,
           "y": 44
         }
@@ -120,7 +120,6 @@
           "displayCondition": {
             "name": "Progressbar5"
           },
-          "name": "progress_bar_filled_5.png",
           "x": 231,
           "y": 44
         }
@@ -133,7 +132,6 @@
           "displayCondition": {
             "name": "Progressbar6"
           },
-          "name": "progress_bar_filled_6.png",
           "x": 231,
           "y": 44
         }
@@ -146,7 +144,6 @@
           "displayCondition": {
             "name": "Progressbar7"
           },
-          "name": "progress_bar_filled_7.png",
           "x": 231,
           "y": 44
         }
@@ -159,7 +156,6 @@
           "displayCondition": {
             "name": "Progressbar8"
           },
-          "name": "progress_bar_filled_8.png",
           "x": 231,
           "y": 44
         }
@@ -172,7 +168,6 @@
           "displayCondition": {
             "name": "Progressbar9"
           },
-          "name": "progress_bar_filled_9.png",
           "x": 231,
           "y": 44
         }
@@ -181,9 +176,10 @@
         "type": "outputslot",
         "data": {
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 204,
           "y": 98
         }
@@ -192,9 +188,10 @@
         "type": "outputslot",
         "data": {
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 177,
           "y": 98
         }
@@ -205,10 +202,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 4,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #4",
           "x": 204,
           "y": 62
         }
@@ -217,9 +218,10 @@
         "type": "outputslot",
         "data": {
           "id": 3,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
           "x": 231,
           "y": 98
         }

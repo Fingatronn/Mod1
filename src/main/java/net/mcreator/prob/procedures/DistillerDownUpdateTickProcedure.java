@@ -26,8 +26,7 @@ public class DistillerDownUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 0) <= 64) {
@@ -41,8 +40,7 @@ public class DistillerDownUpdateTickProcedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), 0) + 1));

@@ -45,10 +45,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class SurvivalgeneratorBlock extends Block
-		implements
-
-			EntityBlock {
+public class SurvivalgeneratorBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public SurvivalgeneratorBlock() {
@@ -99,7 +96,6 @@ public class SurvivalgeneratorBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SurvivalgeneratorUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

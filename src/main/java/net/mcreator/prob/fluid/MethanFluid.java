@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class MethanFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.METHAN_TYPE.get(),
-			() -> ProbModFluids.METHAN.get(), () -> ProbModFluids.FLOWING_METHAN.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.METHAN_TYPE.get(), () -> ProbModFluids.METHAN.get(), () -> ProbModFluids.FLOWING_METHAN.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.METHAN_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.METHAN.get());
 
 	private MethanFluid() {

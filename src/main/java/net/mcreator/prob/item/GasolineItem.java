@@ -11,7 +11,6 @@ import net.mcreator.prob.init.ProbModFluids;
 
 public class GasolineItem extends BucketItem {
 	public GasolineItem() {
-		super(ProbModFluids.GASOLINE,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
+		super(ProbModFluids.GASOLINE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
 	}
 }

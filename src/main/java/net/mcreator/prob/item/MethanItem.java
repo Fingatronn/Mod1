@@ -11,7 +11,6 @@ import net.mcreator.prob.init.ProbModFluids;
 
 public class MethanItem extends BucketItem {
 	public MethanItem() {
-		super(ProbModFluids.METHAN,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
+		super(ProbModFluids.METHAN, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
 	}
 }

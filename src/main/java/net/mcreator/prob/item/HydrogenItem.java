@@ -17,8 +17,7 @@ import java.util.List;
 
 public class HydrogenItem extends BucketItem {
 	public HydrogenItem() {
-		super(ProbModFluids.HYDROGEN,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
+		super(ProbModFluids.HYDROGEN, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ProbModTabs.TAB_PROBAMOD));
 	}
 
 	@Override

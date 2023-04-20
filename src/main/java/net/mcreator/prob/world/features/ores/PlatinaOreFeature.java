@@ -33,10 +33,10 @@ public class PlatinaOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new PlatinaOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:platina_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.PLATINA_ORE.get().defaultBlockState())), 2));
-		PLACED_FEATURE = PlacementUtils.register("prob:platina_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(14)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:platina_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.PLATINA_ORE.get().defaultBlockState())), 2));
+		PLACED_FEATURE = PlacementUtils.register("prob:platina_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(14)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

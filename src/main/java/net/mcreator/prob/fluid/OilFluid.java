@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class OilFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.OIL_TYPE.get(),
-			() -> ProbModFluids.OIL.get(), () -> ProbModFluids.FLOWING_OIL.get()).explosionResistance(100f).tickRate(40)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.OIL_TYPE.get(), () -> ProbModFluids.OIL.get(), () -> ProbModFluids.FLOWING_OIL.get()).explosionResistance(100f).tickRate(40)
 			.bucket(() -> ProbModItems.OIL_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.OIL.get());
 
 	private OilFluid() {

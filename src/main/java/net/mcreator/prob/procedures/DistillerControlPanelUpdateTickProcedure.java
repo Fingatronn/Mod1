@@ -22,10 +22,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class DistillerControlPanelUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
-				&& (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
-				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ProbModBlocks.DISTILLER_DOWN.get()
-				&& !((world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get())
+		if (!((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get() && (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get()
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ProbModBlocks.DISTILLER_DOWN.get() && !((world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == ProbModBlocks.DISTILLATION_TANK.get())
 				&& (world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == ProbModBlocks.CONDUCTIVE_IRON_FENCE.get())) {
 			world.setBlock(new BlockPos(x, y, z), ProbModBlocks.DISTILLATION_TANK.get().defaultBlockState(), 3);
 		}
@@ -34,8 +32,7 @@ public class DistillerControlPanelUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.OIL_BUCKET.get()) {
@@ -43,8 +40,7 @@ public class DistillerControlPanelUpdateTickProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				int _amount = 1000;
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(
-							capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 			}
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -78,8 +74,7 @@ public class DistillerControlPanelUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 				return _retval.get();
 			}
 		}.getFluidTankLevel(world, new BlockPos(x, y, z), 1) > 0) {
@@ -111,8 +106,7 @@ public class DistillerControlPanelUpdateTickProcedure {
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					int _amount = 2;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-								.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 				}
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x, y, z);

@@ -12,16 +12,14 @@ import java.util.function.Consumer;
 
 public class AmmoniaFluidType extends FluidType {
 	public AmmoniaFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).density(-1000)
-				.sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
-				.sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).density(-1000).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("prob:blocks/n2"),
-					FLOWING_TEXTURE = new ResourceLocation("prob:blocks/n2");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("prob:blocks/n2"), FLOWING_TEXTURE = new ResourceLocation("prob:blocks/n2");
 
 			@Override
 			public ResourceLocation getStillTexture() {

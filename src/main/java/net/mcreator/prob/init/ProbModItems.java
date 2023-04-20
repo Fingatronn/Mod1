@@ -131,8 +131,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> STEEL_SHOVEL = REGISTRY.register("steel_shovel", () -> new SteelShovelItem());
 	public static final RegistryObject<Item> STEEL_HOE = REGISTRY.register("steel_hoe", () -> new SteelHoeItem());
 	public static final RegistryObject<Item> STEEL_ARMOR_HELMET = REGISTRY.register("steel_armor_helmet", () -> new SteelArmorItem.Helmet());
-	public static final RegistryObject<Item> STEEL_ARMOR_CHESTPLATE = REGISTRY.register("steel_armor_chestplate",
-			() -> new SteelArmorItem.Chestplate());
+	public static final RegistryObject<Item> STEEL_ARMOR_CHESTPLATE = REGISTRY.register("steel_armor_chestplate", () -> new SteelArmorItem.Chestplate());
 	public static final RegistryObject<Item> STEEL_ARMOR_LEGGINGS = REGISTRY.register("steel_armor_leggings", () -> new SteelArmorItem.Leggings());
 	public static final RegistryObject<Item> STEEL_ARMOR_BOOTS = REGISTRY.register("steel_armor_boots", () -> new SteelArmorItem.Boots());
 	public static final RegistryObject<Item> BRONZE_INGOT = REGISTRY.register("bronze_ingot", () -> new BronzeIngotItem());
@@ -149,8 +148,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> ALLOYSMELTERLVL_2 = block(ProbModBlocks.ALLOYSMELTERLVL_2, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> COPPER_ORE = block(ProbModBlocks.COPPER_ORE, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> NAQUADAH_GENERATOR = block(ProbModBlocks.NAQUADAH_GENERATOR, ProbModTabs.TAB_PROBAMOD);
-	public static final RegistryObject<Item> REFINED_NAQUADAH_DIOXID = REGISTRY.register("refined_naquadah_dioxid",
-			() -> new RefinedNaquadahDioxidItem());
+	public static final RegistryObject<Item> REFINED_NAQUADAH_DIOXID = REGISTRY.register("refined_naquadah_dioxid", () -> new RefinedNaquadahDioxidItem());
 	public static final RegistryObject<Item> IRON_DUST = REGISTRY.register("iron_dust", () -> new IronDustItem());
 	public static final RegistryObject<Item> NICKEL_DUST = REGISTRY.register("nickel_dust", () -> new NickelDustItem());
 	public static final RegistryObject<Item> COPPER_DUST = REGISTRY.register("copper_dust", () -> new CopperDustItem());
@@ -184,8 +182,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> POLYETHYLEN = REGISTRY.register("polyethylen", () -> new PolyethylenItem());
 	public static final RegistryObject<Item> POLYPROPILENE = REGISTRY.register("polypropilene", () -> new PolypropileneItem());
 	public static final RegistryObject<Item> POLYVINYL_CHLORIDE = REGISTRY.register("polyvinyl_chloride", () -> new PolyvinylChlorideItem());
-	public static final RegistryObject<Item> POLYETHYLEN_TETRAFLUORIDE = REGISTRY.register("polyethylen_tetrafluoride",
-			() -> new PolyethylenTetrafluorideItem());
+	public static final RegistryObject<Item> POLYETHYLEN_TETRAFLUORIDE = REGISTRY.register("polyethylen_tetrafluoride", () -> new PolyethylenTetrafluorideItem());
 	public static final RegistryObject<Item> TITATIUM_INGOT = REGISTRY.register("titatium_ingot", () -> new TitatiumIngotItem());
 	public static final RegistryObject<Item> TITATIUM_ORE = block(ProbModBlocks.TITATIUM_ORE, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> TITATIUM_BLOCK = block(ProbModBlocks.TITATIUM_BLOCK, ProbModTabs.TAB_PROBAMOD);
@@ -194,8 +191,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> SALT_BLOCK = block(ProbModBlocks.SALT_BLOCK, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> TITAN_DIOXYDE = REGISTRY.register("titan_dioxyde", () -> new TitanDioxydeItem());
 	public static final RegistryObject<Item> TIMER_CIRCUIT = REGISTRY.register("timer_circuit", () -> new TimerCircuitItem());
-	public static final RegistryObject<Item> ENERGY_MEASURE_CIRCUIT = REGISTRY.register("energy_measure_circuit",
-			() -> new EnergyMeasureCircuitItem());
+	public static final RegistryObject<Item> ENERGY_MEASURE_CIRCUIT = REGISTRY.register("energy_measure_circuit", () -> new EnergyMeasureCircuitItem());
 	public static final RegistryObject<Item> CAPACITOR_CIRCUIT = REGISTRY.register("capacitor_circuit", () -> new CapacitorCircuitItem());
 	public static final RegistryObject<Item> CHEMICAL_REACTOR = block(ProbModBlocks.CHEMICAL_REACTOR, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> IRON_SAW = REGISTRY.register("iron_saw", () -> new IronSawItem());
@@ -220,8 +216,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> MACHINECHASISLVL_1 = block(ProbModBlocks.MACHINECHASISLVL_1, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> SIMPLE_ENERGY_CELL = REGISTRY.register("simple_energy_cell", () -> new SimpleEnergyCellItem());
 	public static final RegistryObject<Item> PUMP = block(ProbModBlocks.PUMP, ProbModTabs.TAB_PROBAMOD);
-	public static final RegistryObject<Item> REPLICATOR = REGISTRY.register("replicator_spawn_egg",
-			() -> new ForgeSpawnEggItem(ProbModEntities.REPLICATOR, -6710887, -1, new Item.Properties().tab(ProbModTabs.TAB_PROBAMOD)));
+	public static final RegistryObject<Item> REPLICATOR_SPAWN_EGG = REGISTRY.register("replicator_spawn_egg", () -> new ForgeSpawnEggItem(ProbModEntities.REPLICATOR, -6710887, -1, new Item.Properties().tab(ProbModTabs.TAB_PROBAMOD)));
 	public static final RegistryObject<Item> MUD = block(ProbModBlocks.MUD, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> DISTILLATION_TANK = block(ProbModBlocks.DISTILLATION_TANK, ProbModTabs.TAB_PROBAMOD);
 	public static final RegistryObject<Item> CONDUCTIVE_IRON_STAIRS = block(ProbModBlocks.CONDUCTIVE_IRON_STAIRS, ProbModTabs.TAB_PROBAMOD);
@@ -234,6 +229,7 @@ public class ProbModItems {
 	public static final RegistryObject<Item> GOLD_DRILL_SPINNING = REGISTRY.register("gold_drill_spinning", () -> new GoldDrillSpinningItem());
 	public static final RegistryObject<Item> BRONZE_DRILL_SPINNING = REGISTRY.register("bronze_drill_spinning", () -> new BronzeDrillSpinningItem());
 	public static final RegistryObject<Item> DISTILLER_DOWN = block(ProbModBlocks.DISTILLER_DOWN, ProbModTabs.TAB_PROBAMOD);
+	public static final RegistryObject<Item> DEDSTONEPRESS = block(ProbModBlocks.DEDSTONEPRESS, ProbModTabs.TAB_PROBAMOD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -43,10 +43,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class ChemicalReactorBlock extends Block
-		implements
-
-			EntityBlock {
+public class ChemicalReactorBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ChemicalReactorBlock() {
@@ -57,8 +54,7 @@ public class ChemicalReactorBlock extends Block
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component
-				.literal("Excess matter is destroyed! Only able to preform easyier tasks. For mass production build Chemical reactor multiblock"));
+		list.add(Component.literal("Excess matter is destroyed! Only able to preform easyier tasks. For mass production build Chemical reactor multiblock"));
 	}
 
 	@Override

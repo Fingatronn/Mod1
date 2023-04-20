@@ -1,13 +1,10 @@
-
 package net.mcreator.prob.client.gui;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -70,23 +67,9 @@ public class DustSmelterGUIScreen extends AbstractContainerScreen<DustSmelterGUI
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "DustSmelter", 6, 7, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				BlockEntity BlockEntity = world.getBlockEntity(pos);
-				if (BlockEntity != null)
-					return BlockEntity.getPersistentData().getDouble(tag);
-				return 0;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Process")) + "", 96, 34, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				BlockEntity BlockEntity = world.getBlockEntity(pos);
-				if (BlockEntity != null)
-					return BlockEntity.getPersistentData().getDouble(tag);
-				return 0;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Fuel")) + "", 33, 34, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.dust_smelter_gui.label_dustsmelter"), 6, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.dust_smelter_gui.label_bnbtnumberprocess"), 96, 34, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.dust_smelter_gui.label_bnbtnumberfuel"), 33, 34, -12829636);
 	}
 
 	@Override

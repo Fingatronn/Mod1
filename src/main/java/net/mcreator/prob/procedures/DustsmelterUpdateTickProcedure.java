@@ -27,8 +27,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.IRON_DUST.get()) {
@@ -42,8 +41,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -73,8 +71,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.NICKEL_DUST.get()) {
@@ -88,8 +85,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -119,8 +115,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.COPPER_DUST.get()) {
@@ -134,8 +129,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -165,8 +159,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.ALUMINIUM_DUST.get()) {
@@ -180,8 +173,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -211,8 +203,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.OSMIUM_DUST.get()) {
@@ -226,8 +217,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -257,8 +247,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.PLATINA_DUST.get()) {
@@ -272,8 +261,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -303,8 +291,7 @@ public class DustsmelterUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.TIN_DUST.get()) {
@@ -318,8 +305,7 @@ public class DustsmelterUpdateTickProcedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), 1) + 1));

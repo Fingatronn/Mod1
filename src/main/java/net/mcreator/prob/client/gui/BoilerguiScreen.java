@@ -1,13 +1,10 @@
-
 package net.mcreator.prob.client.gui;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -70,15 +67,8 @@ public class BoilerguiScreen extends AbstractContainerScreen<BoilerguiMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Boiler", 6, 7, -16448251);
-		this.font.draw(poseStack, "" + (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				BlockEntity BlockEntity = world.getBlockEntity(pos);
-				if (BlockEntity != null)
-					return BlockEntity.getPersistentData().getDouble(tag);
-				return 0;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Steam")) + "", 51, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.boilergui.label_boiler"), 6, 7, -16448251);
+		this.font.draw(poseStack, Component.translatable("gui.prob.boilergui.label_bnbtnumbersteam"), 51, 7, -12829636);
 	}
 
 	@Override

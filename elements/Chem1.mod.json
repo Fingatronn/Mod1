@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -15,7 +15,6 @@
         "data": {
           "image": "da.png",
           "use1Xscale": false,
-          "name": "da.png",
           "x": 186,
           "y": 71
         }
@@ -26,10 +25,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 141,
           "y": 71
         }
@@ -40,10 +43,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 168,
           "y": 71
         }
@@ -52,9 +59,10 @@
         "type": "outputslot",
         "data": {
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 240,
           "y": 71
         }
@@ -62,12 +70,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Chemical reactor",
+          "name": "label_chemical_reactor",
+          "text": {
+            "fixedValue": "Chemical reactor"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Chemical reactor",
           "x": 231,
           "y": 44
         }
@@ -75,12 +85,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:integer:Process>",
+          "name": "label_bnbtintegerprocess",
+          "text": {
+            "fixedValue": "<BNBT:integer:Process>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:integer:Process>",
           "x": 69,
           "y": 44
         }
@@ -88,12 +100,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<energy>",
+          "name": "label_energy",
+          "text": {
+            "fixedValue": "<energy>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<energy>",
           "x": 69,
           "y": 62
         }
@@ -101,12 +115,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<fluidlevel>",
+          "name": "label_fluidlevel",
+          "text": {
+            "fixedValue": "<fluidlevel>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<fluidlevel>",
           "x": 69,
           "y": 80
         }
@@ -114,12 +130,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:text:Fluidtype>",
+          "name": "label_bnbttextfluidtype",
+          "text": {
+            "fixedValue": "<BNBT:text:Fluidtype>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:text:Fluidtype>",
           "x": 69,
           "y": 98
         }
@@ -129,7 +147,6 @@
         "data": {
           "image": "da2.png",
           "use1Xscale": false,
-          "name": "da2.png",
           "x": 204,
           "y": 44
         }
@@ -140,10 +157,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 3,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
           "x": 267,
           "y": 71
         }

@@ -33,10 +33,9 @@ public class NickelOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new NickelOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:nickel_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.NICKEL_ORE.get().defaultBlockState())), 3));
-		PLACED_FEATURE = PlacementUtils.register("prob:nickel_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(33)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:nickel_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.NICKEL_ORE.get().defaultBlockState())), 3));
+		PLACED_FEATURE = PlacementUtils.register("prob:nickel_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(5), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(33)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

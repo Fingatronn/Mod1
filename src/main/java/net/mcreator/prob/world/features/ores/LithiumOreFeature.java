@@ -33,10 +33,10 @@ public class LithiumOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new LithiumOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:lithium_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.LITHIUM_ORE.get().defaultBlockState())), 13));
-		PLACED_FEATURE = PlacementUtils.register("prob:lithium_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(20), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(117)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:lithium_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.LITHIUM_ORE.get().defaultBlockState())), 13));
+		PLACED_FEATURE = PlacementUtils.register("prob:lithium_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(20), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(117)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

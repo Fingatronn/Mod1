@@ -45,10 +45,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class BoilerBlock extends Block
-		implements
-
-			EntityBlock {
+public class BoilerBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public BoilerBlock() {
@@ -99,7 +96,6 @@ public class BoilerBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		BoilerUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

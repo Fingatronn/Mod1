@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class EthanFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.ETHAN_TYPE.get(),
-			() -> ProbModFluids.ETHAN.get(), () -> ProbModFluids.FLOWING_ETHAN.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.ETHAN_TYPE.get(), () -> ProbModFluids.ETHAN.get(), () -> ProbModFluids.FLOWING_ETHAN.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.ETHAN_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.ETHAN.get());
 
 	private EthanFluid() {

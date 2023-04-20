@@ -36,8 +36,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.CLAY.asItem()) {
@@ -90,8 +89,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 3));
@@ -111,8 +109,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 3)));
@@ -143,8 +140,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.WHITE_WOOL.asItem()) {
@@ -203,8 +199,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 3));
@@ -224,8 +219,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 3)));
@@ -250,8 +244,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.COBBLESTONE.asItem()) {
@@ -310,8 +303,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 3));
@@ -331,8 +323,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 2)));
@@ -352,8 +343,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 3) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -378,8 +368,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.GRAVEL.asItem()) {
@@ -438,8 +427,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 3));
@@ -459,8 +447,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 2)));
@@ -481,8 +468,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -508,8 +494,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.IRON_ORE.asItem()) {
@@ -568,8 +553,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 2));
@@ -589,8 +573,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -611,8 +594,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -638,8 +620,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == Blocks.DEEPSLATE_IRON_ORE.asItem()) {
@@ -698,8 +679,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 2));
@@ -719,8 +699,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -741,8 +720,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -768,8 +746,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModBlocks.COPPER_ORE.get().asItem()) {
@@ -828,8 +805,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 2));
@@ -849,8 +825,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -871,8 +846,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -898,8 +872,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModBlocks.ALUMINIUM_ORE.get().asItem()) {
@@ -958,8 +931,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 2));
@@ -979,8 +951,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -1001,8 +972,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -1028,8 +998,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModBlocks.TIN_ORE.get().asItem()) {
@@ -1088,8 +1057,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 2));
@@ -1109,8 +1077,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 1)));
@@ -1131,8 +1098,7 @@ public class Crusherlvl2UpdateTickProcedure {
 										AtomicInteger _retval = new AtomicInteger(0);
 										BlockEntity _ent = world.getBlockEntity(pos);
 										if (_ent != null)
-											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-													.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 										return _retval.get();
 									}
 								}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -1158,8 +1124,7 @@ public class Crusherlvl2UpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModBlocks.PLATINA_ORE.get().asItem()) {
@@ -1218,8 +1183,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 1) + 3));
@@ -1239,8 +1203,7 @@ public class Crusherlvl2UpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + Mth.nextDouble(RandomSource.create(), 0, 3)));

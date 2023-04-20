@@ -14,8 +14,7 @@ public class C4OnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (ProbModVariables.MapVariables.get(world).detonator == 1) {
 			for (int index0 = 0; index0 < (int) (Mth.nextDouble(RandomSource.create(), 5, 20)); index0++) {
-				world.setBlock(new BlockPos(x + Mth.nextDouble(RandomSource.create(), 1, 15), y + Mth.nextDouble(RandomSource.create(), 1, 15),
-						z + Mth.nextDouble(RandomSource.create(), 1, 15)), Blocks.FIRE.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + Mth.nextDouble(RandomSource.create(), 1, 15), y + Mth.nextDouble(RandomSource.create(), 1, 15), z + Mth.nextDouble(RandomSource.create(), 1, 15)), Blocks.FIRE.defaultBlockState(), 3);
 			}
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level && !_level.isClientSide())

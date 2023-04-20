@@ -30,8 +30,7 @@ public class RefinedNaquadahDioxidItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		RefinedNaquadahDioxidLivingEntityIsHitWithItemProcedure.execute(context.getLevel(), context.getClickedPos().getX(),
-				context.getClickedPos().getY(), context.getClickedPos().getZ());
+		RefinedNaquadahDioxidLivingEntityIsHitWithItemProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ());
 		return InteractionResult.SUCCESS;
 	}
 

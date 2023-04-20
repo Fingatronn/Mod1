@@ -33,10 +33,10 @@ public class NaquadahOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new NaquadahOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:naquadah_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.NAQUADAH_ORE.get().defaultBlockState())), 1));
-		PLACED_FEATURE = PlacementUtils.register("prob:naquadah_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(10)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:naquadah_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.NAQUADAH_ORE.get().defaultBlockState())), 1));
+		PLACED_FEATURE = PlacementUtils.register("prob:naquadah_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(10)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

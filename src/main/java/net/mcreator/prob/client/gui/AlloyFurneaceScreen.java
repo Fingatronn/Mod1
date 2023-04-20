@@ -1,4 +1,3 @@
-
 package net.mcreator.prob.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -122,7 +121,7 @@ public class AlloyFurneaceScreen extends AbstractContainerScreen<AlloyFurneaceMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Alloy Furneace", 6, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.alloy_furneace.label_alloy_furneace"), 6, 7, -12829636);
 	}
 
 	@Override

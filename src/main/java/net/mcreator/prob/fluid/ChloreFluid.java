@@ -14,8 +14,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class ChloreFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.CHLORE_TYPE.get(),
-			() -> ProbModFluids.CHLORE.get(), () -> ProbModFluids.FLOWING_CHLORE.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.CHLORE_TYPE.get(), () -> ProbModFluids.CHLORE.get(), () -> ProbModFluids.FLOWING_CHLORE.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.CHLORE_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.CHLORE.get());
 
 	private ChloreFluid() {

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "badlands",
+    "frozen_peaks",
+    "desert"
+  ],
+  "features": "prob:oil_feature",
+  "step": "lakes"
+}

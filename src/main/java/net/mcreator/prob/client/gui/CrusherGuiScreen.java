@@ -1,4 +1,3 @@
-
 package net.mcreator.prob.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -122,7 +121,7 @@ public class CrusherGuiScreen extends AbstractContainerScreen<CrusherGuiMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Crusher", 6, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.crusher_gui.label_crusher"), 6, 7, -12829636);
 	}
 
 	@Override

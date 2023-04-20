@@ -4,6 +4,7 @@ package net.mcreator.prob.block;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -40,13 +41,9 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class NaquadahGeneratorBlock extends Block
-		implements
-
-			EntityBlock {
+public class NaquadahGeneratorBlock extends Block implements EntityBlock {
 	public NaquadahGeneratorBlock() {
-		super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.GRAVEL).strength(1f, 10f).jumpFactor(300f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.GRAVEL).strength(1f, 10f).jumpFactor(300f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -60,8 +57,12 @@ public class NaquadahGeneratorBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(0, 0, 0, 16, 16, 10);
 	}
 
@@ -85,7 +86,6 @@ public class NaquadahGeneratorBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NaquadahGeneratorUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

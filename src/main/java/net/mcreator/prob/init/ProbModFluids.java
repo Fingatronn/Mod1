@@ -56,8 +56,7 @@ public class ProbModFluids {
 	public static final RegistryObject<FlowingFluid> AMMONIA = REGISTRY.register("ammonia", () -> new AmmoniaFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_AMMONIA = REGISTRY.register("flowing_ammonia", () -> new AmmoniaFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> NITRIC_ACID = REGISTRY.register("nitric_acid", () -> new NitricAcidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_NITRIC_ACID = REGISTRY.register("flowing_nitric_acid",
-			() -> new NitricAcidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_NITRIC_ACID = REGISTRY.register("flowing_nitric_acid", () -> new NitricAcidFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

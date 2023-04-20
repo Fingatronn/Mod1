@@ -25,10 +25,7 @@ import net.mcreator.prob.block.entity.PumpBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class PumpBlock extends Block
-		implements
-
-			EntityBlock {
+public class PumpBlock extends Block implements EntityBlock {
 	public PumpBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
@@ -58,7 +55,6 @@ public class PumpBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		PumpUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

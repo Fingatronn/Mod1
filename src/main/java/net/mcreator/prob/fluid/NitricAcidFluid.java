@@ -14,9 +14,8 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class NitricAcidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.NITRIC_ACID_TYPE.get(),
-			() -> ProbModFluids.NITRIC_ACID.get(), () -> ProbModFluids.FLOWING_NITRIC_ACID.get()).explosionResistance(100f)
-			.bucket(() -> ProbModItems.NITRIC_ACID_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.NITRIC_ACID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.NITRIC_ACID_TYPE.get(), () -> ProbModFluids.NITRIC_ACID.get(), () -> ProbModFluids.FLOWING_NITRIC_ACID.get())
+			.explosionResistance(100f).bucket(() -> ProbModItems.NITRIC_ACID_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.NITRIC_ACID.get());
 
 	private NitricAcidFluid() {
 		super(PROPERTIES);

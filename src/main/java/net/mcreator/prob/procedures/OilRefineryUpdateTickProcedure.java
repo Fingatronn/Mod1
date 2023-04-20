@@ -27,8 +27,7 @@ public class OilRefineryUpdateTickProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ProbModItems.OIL_BUCKET.get()) {
@@ -36,8 +35,7 @@ public class OilRefineryUpdateTickProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				int _amount = 1000;
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(
-							capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.OIL.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 			}
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -63,8 +61,7 @@ public class OilRefineryUpdateTickProcedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), 1) + 1));
@@ -80,8 +77,7 @@ public class OilRefineryUpdateTickProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 				return _retval.get();
 			}
 		}.getFluidTankLevel(world, new BlockPos(x, y, z), 1) >= 1000 && new Object() {
@@ -98,8 +94,7 @@ public class OilRefineryUpdateTickProcedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), 7)).getItem() == Blocks.STONE.asItem()) {
@@ -138,8 +133,7 @@ public class OilRefineryUpdateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						int _amount = 1000;
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-									.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+							_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 					}
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -151,8 +145,7 @@ public class OilRefineryUpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 2) + 1));
@@ -172,8 +165,7 @@ public class OilRefineryUpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 3) + 1));
@@ -193,8 +185,7 @@ public class OilRefineryUpdateTickProcedure {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
 									if (_ent != null)
-										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-												.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 									return _retval.get();
 								}
 							}.getAmount(world, new BlockPos(x, y, z), 4) + 1));
@@ -219,36 +210,31 @@ public class OilRefineryUpdateTickProcedure {
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x + 1, y, z));
 					int _amount = 250;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability
-								.fill(new FluidStack(ProbModFluids.GASOLINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.GASOLINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x - 1, y, z));
 					int _amount = 250;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability
-								.fill(new FluidStack(ProbModFluids.GASOLINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.GASOLINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z - 1));
 					int _amount = 250;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability
-								.fill(new FluidStack(ProbModFluids.KEROZINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.KEROZINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z - 1));
 					int _amount = 250;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability
-								.fill(new FluidStack(ProbModFluids.KEROZINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.fill(new FluidStack(ProbModFluids.KEROZINE.get(), _amount), IFluidHandler.FluidAction.EXECUTE));
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					int _amount = 1000;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-								.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+						_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null).ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 				}
 			}
 		}

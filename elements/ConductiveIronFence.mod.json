@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "cis",
@@ -100,16 +100,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "CAMPFIRE_SIGNAL_SMOKE"
-    },
-    "particleSpawningShape": "Top",
-    "particleSpawningRadious": 1.0,
-    "particleAmount": 1,
-    "particleCondition": {
-      "name": "ConductiveIronFenceParticleSpawningCondition"
-    },
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

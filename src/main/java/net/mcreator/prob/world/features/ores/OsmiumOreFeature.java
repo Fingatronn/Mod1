@@ -33,10 +33,9 @@ public class OsmiumOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new OsmiumOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:osmium_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.OSMIUM_ORE.get().defaultBlockState())), 7));
-		PLACED_FEATURE = PlacementUtils.register("prob:osmium_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(11), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:osmium_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.OSMIUM_ORE.get().defaultBlockState())), 7));
+		PLACED_FEATURE = PlacementUtils.register("prob:osmium_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(11), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

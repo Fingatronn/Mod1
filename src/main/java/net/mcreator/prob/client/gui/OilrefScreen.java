@@ -1,21 +1,15 @@
-
 package net.mcreator.prob.client.gui;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.prob.world.inventory.OilrefMenu;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -73,37 +67,13 @@ public class OilrefScreen extends AbstractContainerScreen<OilrefMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "" + (new Object() {
-			public int getEnergyStored(BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
-			}
-		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 63, 7, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public int getFluidTankLevel(BlockPos pos, int tank) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
-				return _retval.get();
-			}
-		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 63, 16, -12829636);
-		this.font.draw(poseStack, "Oil Refinery", 153, 7, -12829636);
-		this.font.draw(poseStack, "" + (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				BlockEntity BlockEntity = world.getBlockEntity(pos);
-				if (BlockEntity != null)
-					return BlockEntity.getPersistentData().getDouble(tag);
-				return 0;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "process")) + "", 108, 70, -12829636);
-		this.font.draw(poseStack, "Mode", 4, 103, -12829636);
-		this.font.draw(poseStack, "Energia", 24, 6, -12829636);
-		this.font.draw(poseStack, "Fluid", 34, 16, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_energy"), 63, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_fluidlevel"), 63, 16, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_oil_refinery"), 153, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_bnbtnumberprocess"), 108, 70, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_mode"), 4, 103, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_energia"), 24, 6, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.prob.oilref.label_fluid"), 34, 16, -12829636);
 	}
 
 	@Override

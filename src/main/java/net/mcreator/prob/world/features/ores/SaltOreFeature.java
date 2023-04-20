@@ -34,11 +34,9 @@ public class SaltOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new SaltOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("prob:salt_ore", FEATURE, new OreConfiguration(List.of(
-				OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.SALT_ORE.get().defaultBlockState())),
-				15));
-		PLACED_FEATURE = PlacementUtils.register("prob:salt_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(22), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("prob:salt_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ProbModBlocks.SALT_ORE.get().defaultBlockState())), 15));
+		PLACED_FEATURE = PlacementUtils.register("prob:salt_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(22), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

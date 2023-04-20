@@ -2,6 +2,7 @@
 package net.mcreator.prob.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -32,8 +33,7 @@ public class C4Block extends Block {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public C4Block() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 80f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 80f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -48,8 +48,12 @@ public class C4Block extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(6, 8, 0, 14, 16, 10);
 			case NORTH -> box(2, 8, 6, 10, 16, 16);
@@ -98,7 +102,6 @@ public class C4Block extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		C4OnBlockRightClickedProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

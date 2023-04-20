@@ -16,8 +16,7 @@ import net.mcreator.prob.init.ProbModFluidTypes;
 import net.mcreator.prob.init.ProbModBlocks;
 
 public abstract class SteamFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.STEAM_TYPE.get(),
-			() -> ProbModFluids.STEAM.get(), () -> ProbModFluids.FLOWING_STEAM.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ProbModFluidTypes.STEAM_TYPE.get(), () -> ProbModFluids.STEAM.get(), () -> ProbModFluids.FLOWING_STEAM.get()).explosionResistance(100f)
 			.bucket(() -> ProbModItems.STEAM_BUCKET.get()).block(() -> (LiquidBlock) ProbModBlocks.STEAM.get());
 
 	private SteamFluid() {
