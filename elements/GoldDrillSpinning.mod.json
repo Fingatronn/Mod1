@@ -8,7 +8,7 @@
     "name": "Gold Drill",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Probamod"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 2,

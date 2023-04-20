@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "conhammer",
+    "customModelName": "Normal",
+    "name": "Construction Hammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Probamod"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 0,
+    "efficiency": 2.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 90,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

@@ -8,7 +8,7 @@
     "name": "Bronze Drill Spinning",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Probamod"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 4,

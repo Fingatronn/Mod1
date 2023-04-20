@@ -28,6 +28,7 @@ import net.mcreator.prob.world.features.ores.AluminiumOreFeature;
 import net.mcreator.prob.world.features.OilFeatureFeature;
 import net.mcreator.prob.world.features.NitricAcidFeatureFeature;
 import net.mcreator.prob.world.features.HydrogenFeatureFeature;
+import net.mcreator.prob.world.features.EnchantedTreeFeature;
 import net.mcreator.prob.world.features.ChloreFeatureFeature;
 import net.mcreator.prob.ProbMod;
 
@@ -52,4 +53,5 @@ public class ProbModFeatures {
 	public static final RegistryObject<Feature<?>> CHLORE_FEATURE = REGISTRY.register("chlore_feature", ChloreFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> HYDROGEN_FEATURE = REGISTRY.register("hydrogen_feature", HydrogenFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> NITRIC_ACID_FEATURE = REGISTRY.register("nitric_acid_feature", NitricAcidFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> ENCHANTED_TREE = REGISTRY.register("enchanted_tree", EnchantedTreeFeature::feature);
 }

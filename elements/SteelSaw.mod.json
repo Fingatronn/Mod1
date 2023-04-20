@@ -1,0 +1,30 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "steelsaw",
+    "customModelName": "Normal",
+    "name": "Iron Saw",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Probamod"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 5.0,
+    "attackSpeed": 0.30000000000000004,
+    "enchantability": 14,
+    "damageVsEntity": 14.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "IronSawBlockDestroyedWithTool"
+    }
+  }
+}

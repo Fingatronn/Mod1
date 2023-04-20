@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 230,
+  "ingredient": {
+    "item": "prob:bronze_ingot"
+  },
+  "result": "prob:deleted_mod_element"
+}
