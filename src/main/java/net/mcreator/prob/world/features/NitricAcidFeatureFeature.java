@@ -1,8 +1,13 @@
 
 package net.mcreator.prob.world.features;
 
-import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
-import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.LakeFeature;
+import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.Level;
+import net.minecraft.resources.ResourceKey;
+
+import java.util.Set;
 
 public class NitricAcidFeatureFeature extends LakeFeature {
 	private final Set<ResourceKey<Level>> generateDimensions = Set.of(Level.OVERWORLD);

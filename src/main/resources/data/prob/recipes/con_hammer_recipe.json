@@ -7,7 +7,7 @@
   ],
   "key": {
     "1": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:con_hammer_head"
     },
     "2": {
       "item": "minecraft:string"
@@ -16,14 +16,14 @@
       "item": "minecraft:stick"
     },
     "5": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:con_hammer_head"
     },
     "6": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "prob:deleted_mod_element",
+    "item": "prob:construction_hammer",
     "count": 1
   }
 }

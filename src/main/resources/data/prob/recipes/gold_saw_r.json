@@ -6,14 +6,14 @@
   ],
   "key": {
     "1": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:gold_saw_edge"
     },
     "2": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "prob:deleted_mod_element",
+    "item": "prob:golden_saw",
     "count": 1
   }
 }

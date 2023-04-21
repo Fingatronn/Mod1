@@ -7,17 +7,17 @@
   ],
   "key": {
     "0": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:construction_hammer"
     },
     "1": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:wood_saw_edge"
     },
     "2": {
-      "item": "prob:deleted_mod_element"
+      "item": "prob:blanc_cast"
     }
   },
   "result": {
-    "item": "prob:deleted_mod_element",
+    "item": "prob:saw_edge_cast",
     "count": 1
   }
 }

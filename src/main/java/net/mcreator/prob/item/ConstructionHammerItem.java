@@ -1,7 +1,13 @@
 
 package net.mcreator.prob.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.prob.init.ProbModTabs;
 
 public class ConstructionHammerItem extends PickaxeItem {
 	public ConstructionHammerItem() {

@@ -1,7 +1,18 @@
 
 package net.mcreator.prob.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.prob.procedures.IronSawBlockDestroyedWithToolProcedure;
+import net.mcreator.prob.init.ProbModTabs;
 
 public class SteelSawItem extends AxeItem {
 	public SteelSawItem() {
@@ -35,7 +46,7 @@ public class SteelSawItem extends AxeItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		IronSawBlockDestroyedWithToolProcedure.execute();
+		IronSawBlockDestroyedWithToolProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
 
